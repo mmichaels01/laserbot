@@ -59,13 +59,34 @@ public class BotController : MonoBehaviour
             float y = Input.GetAxis("Vertical");
             Vector2 point = new Vector2(x, y);
             print("Angle : " + Mathf.Atan2(point.y, point.x) * Mathf.Rad2Deg);
-            print(point.magnitude);
+            point = point.normalized;
+            print(point);
+            leftWheel = Mathf.Pow(point.y, 2);
+            rightWheel = Mathf.Pow(point.y,2);
+            if (x < 0)
+            {
+                rightWheel += Mathf.Pow(point.x, 2);
+            }
+            else if (x > 0)
+            {
+                leftWheel += Mathf.Pow(point.x, 2);
+            }
+
+            if (y < 0)
+            {
+                leftWheel *= -1;
+                rightWheel *= -1;
+            }
+
+
+
+            print(leftWheel + " " + rightWheel + " - Wheels");
 
             //if (!Mathf.Approximately(leftWheel, 0) || !Mathf.Approximately(rightWheel, 0))
             //{
-                string msgWheels = "wheels," + leftWheel + "," + rightWheel;
-                msg = Encoding.ASCII.GetBytes(msgWheels);
-                bytesSent += sock.Send(msg);
+            string msgWheels = "wheels," + leftWheel + "," + rightWheel;
+            msg = Encoding.ASCII.GetBytes(msgWheels);
+            bytesSent += sock.Send(msg);
             //}
 
             if (!Mathf.Approximately(aimHorizontal, 0) || !Mathf.Approximately(aimVertical, 0))
