@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ELEMENT cross-domain-policy (allow-access-from*)>
+
+<!ELEMENT allow-access-from EMPTY>
+<!ATTLIST allow-access-from domain CDATA #REQUIRED>
+<!ATTLIST allow-access-from to-ports CDATA #REQUIRED>

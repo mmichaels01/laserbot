@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
 [RequireComponent(typeof(MeshCollider))]
 public class TerrainGenerator : MonoBehaviour {
-	public Texture2D heightMap;
+	Texture2D heightMap;
 	public Texture2D tileMap;
 
 	private int height;
@@ -23,6 +24,7 @@ public class TerrainGenerator : MonoBehaviour {
 
 	void Start()
 	{
+		heightMap = GameObject.Find("WebCamTexture").GetComponent<RawImage>().texture as Texture2D;
 		filter = GetComponent<MeshFilter>();
 		collider = GetComponent <MeshCollider>();
 		width = heightMap.width;
@@ -31,6 +33,10 @@ public class TerrainGenerator : MonoBehaviour {
 
 	void FixedUpdate()
 	{
+
+		heightMap = GameObject.Find("WebCamTexture").GetComponent<RawImage>().texture as Texture2D;
+		width = heightMap.width;
+		height = heightMap.height;
 		for (int x = 0; x < width; x++)
 		{
 			for (int z = 0; z < height; z++)
@@ -57,17 +63,17 @@ public class TerrainGenerator : MonoBehaviour {
 
 	void GenSquare(int x, int z, Color c)
 	{
-		verts.Add(new Vector3(x, 0, z));
-		verts.Add(new Vector3(x, 0, z+1));
-		verts.Add(new Vector3(x+1, 0, z+1));
-		verts.Add(new Vector3(x+1, 0 ,z));
-		int texX = 0;
-		int texY = 0;
-		GenSquareUVs(texX,  texY);
-		GenSquareTris();
+		//verts.Add(new Vector3(x, 0, z));
+		//verts.Add(new Vector3(x, 0, z+1));
+		//verts.Add(new Vector3(x+1, 0, z+1));
+		//verts.Add(new Vector3(x+1, 0 ,z));
+		//int texX = 0;
+		//int texY = 0;
+		//GenSquareUVs(texX,  texY);
+		//GenSquareTris();
 
 		//Extrude upward
-		if (WithinColorRange(new Color(161f / 256f ,161f / 256f,161f / 256f), c))
+		if (WithinColorRange(new Color(124f / 256f , 12f / 256f,  48f / 256f), c))
 		{
 
 			verts.Add(new Vector3(x, 1, z));
@@ -75,53 +81,38 @@ public class TerrainGenerator : MonoBehaviour {
 			verts.Add(new Vector3(x + 1, 1, z + 1));
 			verts.Add(new Vector3(x + 1, 1, z));
 
-			GenSquareUVs(4, 1);
+			GenSquareUVs(0, 0);
 			GenSquareTris();
 		}
 
-		if (WithinColorRange(new Color(70f / 256f, 44f / 256f, 105f / 256f), c))
+		//Extrude upward
+		if (WithinColorRange(new Color(170f / 256f, 115f / 256f, 116f / 256f), c))
 		{
+
 			verts.Add(new Vector3(x, 1, z));
 			verts.Add(new Vector3(x, 1, z + 1));
 			verts.Add(new Vector3(x + 1, 1, z + 1));
 			verts.Add(new Vector3(x + 1, 1, z));
 
-			GenSquareUVs(5, 1);
+			GenSquareUVs(4, 0);
 			GenSquareTris();
 		}
 
-        if (WithinColorRange(new Color(25f / 256f, 25f / 256f, 25f / 256f), c))
+
+        //Extrude upward
+        if (WithinColorRange(new Color(61f / 256f, 33f / 256f, 33f / 256f), c))
         {
+
             verts.Add(new Vector3(x, 1, z));
             verts.Add(new Vector3(x, 1, z + 1));
             verts.Add(new Vector3(x + 1, 1, z + 1));
             verts.Add(new Vector3(x + 1, 1, z));
 
-            GenSquareUVs(6, 1);
+            GenSquareUVs(2, 1);
             GenSquareTris();
         }
 
-        if (WithinColorRange(new Color(255f / 256f, 230f / 256f, 3f / 256f), c))
-        {
-            verts.Add(new Vector3(x, 1, z));
-            verts.Add(new Vector3(x, 1, z + 1));
-            verts.Add(new Vector3(x + 1, 1, z + 1));
-            verts.Add(new Vector3(x + 1, 1, z));
 
-            GenSquareUVs(7, 1);
-            GenSquareTris();
-        }
-
-        if (WithinColorRange(new Color(100f / 256f, 100f / 256f, 100f / 256f), c))
-        {
-            verts.Add(new Vector3(x, 1, z));
-            verts.Add(new Vector3(x, 1, z + 1));
-            verts.Add(new Vector3(x + 1, 1, z + 1));
-            verts.Add(new Vector3(x + 1, 1, z));
-
-            GenSquareUVs(3, 1);
-            GenSquareTris();
-        }
 	}
 
 	void GenSquareTris()
@@ -155,8 +146,8 @@ public class TerrainGenerator : MonoBehaviour {
 		filter.mesh.uv = uvs.ToArray();
 		filter.mesh.RecalculateNormals();
 
-        //print("uv" + uvs.Count);
-        //print("vert" + verts.Count);
+		//print("uv" + uvs.Count);
+		//print("vert" + verts.Count);
 
 		verts.Clear();
 		tris.Clear();
