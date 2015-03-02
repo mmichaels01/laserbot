@@ -22,11 +22,11 @@ public class TextureManager : MonoBehaviour {
 		WebCamDevice[] webcams = WebCamTexture.devices;
 		webcam = webcams[0];
 		webcamTexture = new WebCamTexture(160,120);
-		print(webcamTexture.height + " " +  webcamTexture.width);
+		//print(webcamTexture.height + " " +  webcamTexture.width);
 		webcamTexture.Play();
 		foreach (var device in webcams)
 		{
-			print(device.name);
+			//print(device.name);
 		}
 	}
 
@@ -60,7 +60,7 @@ public class TextureManager : MonoBehaviour {
 	{
 		
 		Color32[] pixels = webcamTexture.GetPixels32();
-		print(pixels.Length);
+		//print(pixels.Length);
 		Texture2D texture = new Texture2D(webcamTexture.width, webcamTexture.height, TextureFormat.ARGB32,false);
 		texture.SetPixels32(pixels);
 		texture.Apply();

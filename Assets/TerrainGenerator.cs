@@ -99,18 +99,18 @@ public class TerrainGenerator : MonoBehaviour {
 		}
 
 
-        //Extrude upward
-        if (WithinColorRange(new Color(61f / 256f, 33f / 256f, 33f / 256f), c))
-        {
+		//Extrude upward
+		if (WithinColorRange(new Color(61f / 256f, 33f / 256f, 33f / 256f), c))
+		{
 
-            verts.Add(new Vector3(x, 1, z));
-            verts.Add(new Vector3(x, 1, z + 1));
-            verts.Add(new Vector3(x + 1, 1, z + 1));
-            verts.Add(new Vector3(x + 1, 1, z));
+			verts.Add(new Vector3(x, 1, z));
+			verts.Add(new Vector3(x, 1, z + 1));
+			verts.Add(new Vector3(x + 1, 1, z + 1));
+			verts.Add(new Vector3(x + 1, 1, z));
 
-            GenSquareUVs(2, 1);
-            GenSquareTris();
-        }
+			GenSquareUVs(2, 1);
+			GenSquareTris();
+		}
 
 
 	}

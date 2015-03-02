@@ -55,6 +55,11 @@ public class BotController : MonoBehaviour
             float aimHorizontal = Input.GetAxis("AimHorizontal");
             float aimVertical = Input.GetAxis("AimVertical");
 
+            float x = Input.GetAxis("Horizontal");
+            float y = Input.GetAxis("Vertical");
+            Vector2 point = new Vector2(x, y);
+            print("Angle : " + Mathf.Atan2(point.y, point.x) * Mathf.Rad2Deg);
+            print(point.magnitude);
 
             //if (!Mathf.Approximately(leftWheel, 0) || !Mathf.Approximately(rightWheel, 0))
             //{
