@@ -13,6 +13,8 @@ public class BotController : MonoBehaviour
     byte[] msg;
     float update;
 
+    Joystick jstick = new Joystick();
+
     // Use this for initialization
     void Start()
     {
@@ -55,6 +57,8 @@ public class BotController : MonoBehaviour
             float aimHorizontal = Input.GetAxis("AimHorizontal");
             float aimVertical = Input.GetAxis("AimVertical");
 
+            #region Mike Keyboard Code
+            
             float x = Input.GetAxis("Horizontal");
             float y = Input.GetAxis("Vertical");
             Vector2 point = new Vector2(x, y);
@@ -63,6 +67,7 @@ public class BotController : MonoBehaviour
             print(point);
             leftWheel = Mathf.Pow(point.y, 2);
             rightWheel = Mathf.Pow(point.y,2);
+
             if (x < 0)
             {
                 rightWheel += Mathf.Pow(point.x, 2);
@@ -77,10 +82,19 @@ public class BotController : MonoBehaviour
                 leftWheel *= -1;
                 rightWheel *= -1;
             }
+            
+            #endregion
 
-
+            #region Ricky Joystick Code
+            if (leftWheel == 0 && rightWheel == 0)
+            {
+                leftWheel = jstick.LeftWheel();
+                rightWheel = jstick.RightWheel();
+            }
+            #endregion
 
             print(leftWheel + " " + rightWheel + " - Wheels");
+
 
             //if (!Mathf.Approximately(leftWheel, 0) || !Mathf.Approximately(rightWheel, 0))
             //{

@@ -9,7 +9,7 @@ using System.Net.Sockets;
 using System;
 using System.Text;
 
-public class Joystick : MonoBehaviour
+public class Joystick
 {
     int count = 0;
     public float LeftWheel()
@@ -43,14 +43,14 @@ public class Joystick : MonoBehaviour
     public float GetMagnitude()
     {
         //return the max value between the two axis
-        return Math.Max(Math.Abs(Input.GetAxis("LeftWheel")), Math.Abs(Input.GetAxis("RightWheel") * -1));
+        return Math.Max(Math.Abs(Input.GetAxis("HorizontalStick")), Math.Abs(Input.GetAxis("VerticalStick") * -1));
     }
 
     public int GetDirection8Way()
     {
         //Get axis data
-        float X = Input.GetAxis("LeftWheel");
-        float Y = Input.GetAxis("RightWheel") * -1;
+        float X = Input.GetAxis("HorizontalStick");
+        float Y = Input.GetAxis("VerticalStick") * -1;
         float rotation = (float)Math.Atan2(Y, X);
 
         //Sensitivity, if number to low, set rotation to 361, EvalauateDirection will return -1
@@ -95,11 +95,11 @@ public class Joystick : MonoBehaviour
         return 180 / (float)Math.PI * radians;//Convert radians to degrees, degrees are easier to work with
     }
 
-    //Previous Methods Used
+    //Previous Methods Used, Not Using Anymore
     public int GetDirection()
     {
-        float X = Input.GetAxis("LeftWheel");
-        float Y = Input.GetAxis("RightWheel") * -1;
+        float X = Input.GetAxis("Horizontal");
+        float Y = Input.GetAxis("Vertical") * -1;
         float rotation = (float)Math.Atan2(Y, X);
 
         if (X < 0.2f && Y < 0.2f &&
