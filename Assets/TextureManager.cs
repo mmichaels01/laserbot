@@ -6,10 +6,21 @@ using UnityEngine.UI;
 
 public class TextureManager : MonoBehaviour {
 
-	public static string url = "192.168.0.150:8090/test.mjpg";
+	public static string laserBotURL1 = "192.168.0.150:8090/test.mjpg";
+    public static string laserBotURL2 = "192.168.0.150:8090/test.mjpg";
+    public static string arenaURL = "192.168.0.159:8090";
+
+    public static string laserBotString1 = "LaserBot1";
+    public static string laserBotString2 = "LaserBot2";
+    public static string laserBotArena = "LaserBotArena";
+
 	Texture2D rawTexture;
-	WebCamTexture webcamTexture;
-	WebCamDevice webcam;
+	WebCamTexture webCamTextureBot1;
+    WebCamTexture webCamTextureBot2;
+    WebCamTexture webCamTextureArena;
+    WebCamDevice bot1Cam;
+    WebCamDevice bot2Cam;
+    WebCamDevice arenaCam;
 
 	void Awake()
 	{
@@ -18,16 +29,24 @@ public class TextureManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        foreach (WebCamDevice cam in WebCamTexture.devices)
+        {
+            print(cam.name);
+        }
 
-		WebCamDevice[] webcams = WebCamTexture.devices;
-		webcam = webcams[0];
-		webcamTexture = new WebCamTexture(160,120);
+        
+        webCamTextureArena = new WebCamTexture( 128, 128);
+        print(webCamTextureArena.width);
+        webCamTextureBot1 = new WebCamTexture(laserBotString1,256,256);
+        print(webCamTextureBot1.filterMode);
+        //webCamTextureArena = new WebCamTexture("LaserBot1", 128, 128);
+
 		//print(webcamTexture.height + " " +  webcamTexture.width);
-		webcamTexture.Play();
-		foreach (var device in webcams)
-		{
-			//print(device.name);
-		}
+		webCamTextureArena.Play();
+        print(webCamTextureBot1.requestedHeight);
+        print(webCamTextureBot1.requestedWidth);
+      
+
 	}
 
 	//public static Texture2D LoadTextureFromStream(){
@@ -58,10 +77,13 @@ public class TextureManager : MonoBehaviour {
 
 	void FixedUpdate()
 	{
+        
+        print(webCamTextureBot1.width);
+        print(webCamTextureBot1.height);
 		
-		Color32[] pixels = webcamTexture.GetPixels32();
+		Color32[] pixels = webCamTextureArena.GetPixels32();
 		//print(pixels.Length);
-		Texture2D texture = new Texture2D(webcamTexture.width, webcamTexture.height, TextureFormat.ARGB32,false);
+		Texture2D texture = new Texture2D(webCamTextureArena.width, webCamTextureArena.height, TextureFormat.ARGB32,false);
 		texture.SetPixels32(pixels);
 		texture.Apply();
 
