@@ -2,42 +2,26 @@ Initialize engine version: 5.0.0b18 (4f6e03cdd363)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
-    Vendor:   Intel
-    VRAM:     128 MB
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\laserbot\LaserBots_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\laserbot\LaserBots_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\laserbot\LaserBots_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\laserbot\LaserBots_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\laserbot\LaserBots_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\laserbot\LaserBots_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.065 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: D:\LaserBots\LaserBots_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\LaserBots\LaserBots_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\LaserBots\LaserBots_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\LaserBots\LaserBots_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\LaserBots\LaserBots_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\LaserBots\LaserBots_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.054 seconds
+desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: D:\laserbot\LaserBots_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\laserbot\LaserBots_Data\Managed\System.dll (this message is harmless)
-BisonCam, NB Pro
+Platform assembly: D:\LaserBots\LaserBots_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\LaserBots\LaserBots_Data\Managed\System.dll (this message is harmless)
+Cannot find webcam device LaserBot1.
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-LaserBot1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-16
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-LaserBot1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-ERROR - Could not find specified video device
- 
-(Filename:  Line: 1723)
+(Filename:  Line: 117)
 
 connecting
  
@@ -47,8 +31,9 @@ Cannot get pixels when webcam is not running
  
 (Filename:  Line: 102)
 
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 34a8 -> priority: 1 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 28ac -> priority: 1 
+  Thread -> id: 2004 -> priority: 1 
 Cannot get pixels when webcam is not running
  
 (Filename:  Line: 102)
@@ -817,1442 +802,6 @@ Cannot get pixels when webcam is not running
  
 (Filename:  Line: 102)
 
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Angle : 180
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(-1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 1 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
 Angle : 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
@@ -2293,11 +842,11 @@ Angle : 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-(1.0, 0.0)
+(0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1 0 - Wheels
+0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
@@ -2325,11 +874,11 @@ Angle : 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-(1.0, 0.0)
+(0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1 0 - Wheels
+0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
@@ -2361,17 +910,13 @@ Angle : 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-(1.0, 0.0)
+(0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1 0 - Wheels
+0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
@@ -2397,11 +942,11 @@ Angle : 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-(1.0, 0.0)
+(0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1 0 - Wheels
+0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
@@ -2433,11 +978,11 @@ Angle : 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-(1.0, 0.0)
+(0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1 0 - Wheels
+0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
@@ -2469,17 +1014,13 @@ Angle : 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-(1.0, 0.0)
+(0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1 0 - Wheels
+0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
@@ -2505,45 +1046,17 @@ Angle : 0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-(1.0, 0.0)
+(0.0, 0.0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1 0 - Wheels
+0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
 (Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(1.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-1 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Cannot get pixels when webcam is not running
  
@@ -2576,10 +1089,6 @@ Angle : 0
 0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
@@ -2648,10 +1157,6 @@ Angle : 0
 0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
@@ -2684,6 +1189,10 @@ Angle : 0
 0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cannot get pixels when webcam is not running
+ 
+(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
@@ -3140,42 +1649,10 @@ Angle : 0
 0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
 (Filename:  Line: 102)
-
-Angle : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-(0.0, 0.0)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-0 0 - Wheels
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Cannot get pixels when webcam is not running
  
@@ -3316,6 +1793,10 @@ Angle : 0
 0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cannot get pixels when webcam is not running
+ 
+(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
@@ -3348,10 +1829,6 @@ Angle : 0
 0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
@@ -3632,6 +2109,10 @@ Angle : 0
 0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cannot get pixels when webcam is not running
+ 
+(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  
@@ -3664,18 +2145,6 @@ Angle : 0
 0 0 - Wheels
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
-
-Cannot get pixels when webcam is not running
- 
-(Filename:  Line: 102)
 
 Cannot get pixels when webcam is not running
  

@@ -1,0 +1,2520 @@
+Initialize engine version: 5.0.0b18 (4f6e03cdd363)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\LaserBots\LaserBots_x86_64_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\LaserBots\LaserBots_x86_64_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\LaserBots\LaserBots_x86_64_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.059 seconds
+desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\System.dll (this message is harmless)
+ERROR - Could not find specified video device
+UnityEngine.WebCamTexture:INTERNAL_CALL_Play(WebCamTexture)
+UnityEngine.WebCamTexture:Play() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:76)
+TextureManager:Start() (at D:\LaserBots\Assets\TextureManager.cs:46)
+
+[C:/buildslave/unity/build/External/videoInput/videoInput.cpp line 1723] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 76)
+
+connecting
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:Start() (at D:\LaserBots\Assets\BotController.cs:31)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2c70 -> priority: 1 
+  Thread -> id: 2ab0 -> priority: 1 
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Angle : 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+(0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+0 0 - Wheels
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
+BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+
+Cannot get pixels when webcam is not running
+UnityEngine.WebCamTexture:GetPixels32(Color32[])
+UnityEngine.WebCamTexture:GetPixels32() (at C:\buildslave\unity\build\artifacts\generated\common\modules\UnityEngineWebCamTexture.gen.cs:188)
+TextureManager:FixedUpdate() (at D:\LaserBots\Assets\TextureManager.cs:70)
+
+[C:\buildslave\unity\build\Runtime/Video/BaseWebCamTexture.h line 102] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UnityEngineWebCamTexture.gen.cs Line: 188)
+

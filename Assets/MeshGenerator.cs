@@ -24,7 +24,7 @@ public class MeshGenerator : MonoBehaviour {
 
 	void Start()
 	{
-		heightMap = GameObject.Find("WebCamTexture").GetComponent<RawImage>().texture as Texture2D;
+		heightMap = GameObject.Find("WebCamTextureArena").GetComponent<RawImage>().texture as Texture2D;
 		filter = GetComponent<MeshFilter>();
 		collider = GetComponent <MeshCollider>();
 		width = heightMap.width;
@@ -34,7 +34,7 @@ public class MeshGenerator : MonoBehaviour {
 	void FixedUpdate()
 	{
 
-		heightMap = GameObject.Find("WebCamTexture").GetComponent<RawImage>().texture as Texture2D;
+		heightMap = GameObject.Find("WebCamTextureArena").GetComponent<RawImage>().texture as Texture2D;
 		width = heightMap.width;
 		height = heightMap.height;
 		for (int x = 0; x < width; x++)
