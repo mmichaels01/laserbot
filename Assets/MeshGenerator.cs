@@ -10,8 +10,9 @@ public class MeshGenerator : MonoBehaviour {
 	Texture2D heightMap;
 	public Texture2D tileMap;
 
-	private int height;
-	private int width;
+
+	public int height;
+	public int width;
 
 	MeshFilter filter;
 	MeshCollider collider;
@@ -27,32 +28,33 @@ public class MeshGenerator : MonoBehaviour {
 		heightMap = GameObject.Find("WebCamTextureArena").GetComponent<RawImage>().texture as Texture2D;
 		filter = GetComponent<MeshFilter>();
 		collider = GetComponent <MeshCollider>();
-		width = heightMap.width;
-		height = heightMap.height;
+
 	}
 
 	void FixedUpdate()
 	{
 
 		heightMap = GameObject.Find("WebCamTextureArena").GetComponent<RawImage>().texture as Texture2D;
-		width = heightMap.width;
-		height = heightMap.height;
+
 		for (int x = 0; x < width; x++)
 		{
 			for (int z = 0; z < height; z++)
 			{
-				GenSquare(x, z, heightMap.GetPixel(x, z));
+				GenSquare(x, z, heightMap.GetPixel(x, z), new Color(0f / 256f, 0f / 256f, 0f / 256f));
 			}
 		}
 
+		print("h - " + height + " w - " + width);
+		print(verts.Count);
 		GenMesh();
+
 	}
 
-	bool WithinColorRange(Color targetColor, Color inputColor)
+	bool WithinColorRange(Color inputColor, Color targetColor, float strength)
 	{
-		if (Mathf.Abs(targetColor.r - inputColor.r) < 40f / 256f
-			&& Mathf.Abs(targetColor.g - inputColor.g) < 40f/ 256f
-			&& Mathf.Abs(targetColor.b - inputColor.b) < 40f/ 256f)
+		if (Mathf.Abs(targetColor.r - inputColor.r) < strength / 256f
+			&& Mathf.Abs(targetColor.g - inputColor.g) < strength / 256f
+			&& Mathf.Abs(targetColor.b - inputColor.b) < strength / 256f)
 		{
 			return true;
 		}
@@ -61,19 +63,10 @@ public class MeshGenerator : MonoBehaviour {
 	}
 
 
-	void GenSquare(int x, int z, Color c)
+	void GenSquare(int x, int z, Color inputColor, Color targetColor)
 	{
-		//verts.Add(new Vector3(x, 0, z));
-		//verts.Add(new Vector3(x, 0, z+1));
-		//verts.Add(new Vector3(x+1, 0, z+1));
-		//verts.Add(new Vector3(x+1, 0 ,z));
-		//int texX = 0;
-		//int texY = 0;
-		//GenSquareUVs(texX,  texY);
-		//GenSquareTris();
-
 		//Extrude upward
-		if (WithinColorRange(new Color(124f / 256f , 12f / 256f,  48f / 256f), c))
+		if (WithinColorRange(targetColor, inputColor, 64))
 		{
 
 			verts.Add(new Vector3(x, 1, z));
@@ -84,35 +77,6 @@ public class MeshGenerator : MonoBehaviour {
 			GenSquareUVs(0, 0);
 			GenSquareTris();
 		}
-
-		//Extrude upward
-		if (WithinColorRange(new Color(170f / 256f, 115f / 256f, 116f / 256f), c))
-		{
-
-			verts.Add(new Vector3(x, 1, z));
-			verts.Add(new Vector3(x, 1, z + 1));
-			verts.Add(new Vector3(x + 1, 1, z + 1));
-			verts.Add(new Vector3(x + 1, 1, z));
-
-			GenSquareUVs(4, 0);
-			GenSquareTris();
-		}
-
-
-		//Extrude upward
-		if (WithinColorRange(new Color(61f / 256f, 33f / 256f, 33f / 256f), c))
-		{
-
-			verts.Add(new Vector3(x, 1, z));
-			verts.Add(new Vector3(x, 1, z + 1));
-			verts.Add(new Vector3(x + 1, 1, z + 1));
-			verts.Add(new Vector3(x + 1, 1, z));
-
-			GenSquareUVs(2, 1);
-			GenSquareTris();
-		}
-
-
 	}
 
 	void GenSquareTris()
