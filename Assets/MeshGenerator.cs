@@ -12,11 +12,14 @@ public class MeshGenerator  {
     MeshCollider collider;
     int scale = 1;
 
+    public GameObject obj;
+    public int xCoord;
+    public int zCoord;
+    public int yCoord;
 
     public MeshGenerator(float texScale)
     {
         this.texScale = texScale;
-
     }
 
     public MeshGenerator(float texScale,  MeshFilter filter, MeshCollider collider)
@@ -27,13 +30,25 @@ public class MeshGenerator  {
         this.collider = collider;
     }
 
-    public void GenearateWallsFromTexture(Texture2D t, int width, int height, int wallHeight, bool renderCollision = false){
+    public MeshGenerator(float texScale, MeshFilter filter, MeshCollider collider, GameObject gObj)
+    {
+        this.texScale = texScale;
+        this.filter = filter;
+        this.collider = collider;
+
+        this.obj = gObj;
+        this.xCoord = Mathf.RoundToInt(gObj.transform.position.x);
+        this.yCoord = Mathf.RoundToInt(gObj.transform.position.y);
+        this.zCoord = Mathf.RoundToInt(gObj.transform.position.z);
+    }
+
+    public void GenerateWallsFromTexture(Texture2D t, int width, int height, int wallHeight, bool renderCollision = false){
 
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
             {
-                GenerateCube(x * scale, wallHeight * scale, y * scale, t.GetPixel(x, y),new Color(0f / 256f, 0f / 256f, 0f / 256f));
+                GenerateCube(x * scale, wallHeight * scale, y * scale, t.GetPixel(xCoord + x, zCoord + y), new Color(0f / 256f, 0f / 256f, 0f / 256f));
             }
         }
 
@@ -84,7 +99,7 @@ public class MeshGenerator  {
             //Left
             verts.Add(new Vector3(x, y, z + scale));
             verts.Add(new Vector3(x, y + scale, z + scale));
-            verts.Add(new Vector3(x , y + scale, z));
+            verts.Add(new Vector3(x, y + scale, z));
             verts.Add(new Vector3(x, y, z));
 
             GenerateSquareUVs(1, 2, texScale);
@@ -135,6 +150,20 @@ public class MeshGenerator  {
 
     void GenerateMesh()
     {
+        filter.mesh.Clear();
+        filter.mesh.vertices = verts.ToArray();
+        filter.mesh.triangles = tris.ToArray();
+        filter.mesh.uv = uvs.ToArray();
+        filter.mesh.RecalculateNormals();
+
+        verts.Clear();
+        tris.Clear();
+        uvs.Clear();
+    }
+
+    void GenerateMeshObj()
+    {
+        MeshFilter filter = obj.GetComponent<MeshFilter>();
         filter.mesh.Clear();
         filter.mesh.vertices = verts.ToArray();
         filter.mesh.triangles = tris.ToArray();
