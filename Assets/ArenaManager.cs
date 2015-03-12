@@ -66,7 +66,7 @@ public class ArenaManager : MonoBehaviour {
             {
                 chunkManager.GenerateWallsFromTexture(webcamTextureArena, 32, 32, wallScale, false);
             }
-            floorManager.GenerateFloor(webcamTextureArena, 0, 0, 0, true, 256);
+            floorManager.GenerateFloor(webcamTextureArena, 0, 0, 0, true, 128);
 
             lastUpdate = Time.time;
         }

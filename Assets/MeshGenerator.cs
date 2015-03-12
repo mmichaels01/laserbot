@@ -17,6 +17,11 @@ public class MeshGenerator  {
     public int zCoord;
     public int yCoord;
 
+    public float r = .117f;
+    public float g = .5f;
+    public float b = .117f;
+    public float colorComparisonStrength = 50f;
+
     public MeshGenerator(float texScale)
     {
         this.texScale = texScale;
@@ -48,7 +53,7 @@ public class MeshGenerator  {
         {
             for (int y = 0; y < height; y++)
             {
-                GenerateCube(x * scale, wallHeight * scale, y * scale, t.GetPixel(xCoord + x, zCoord + y), new Color(0f / 256f, 0f / 256f, 0f / 256f));
+                GenerateCube(x * scale, wallHeight * scale, y * scale, t.GetPixel(xCoord + x, zCoord + y), new Color(r, g, b));
             }
         }
 
@@ -75,7 +80,7 @@ public class MeshGenerator  {
 
     public void GenerateCube(int x, int y, int z,Color inputColor, Color targetColor)
     {
-        if (WithinColorRange(targetColor, inputColor, 64))
+        if (WithinColorRange(targetColor, inputColor, colorComparisonStrength))
         {
 
             //Top
