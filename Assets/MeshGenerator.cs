@@ -10,27 +10,30 @@ public class MeshGenerator  {
 
     MeshFilter filter;
     MeshCollider collider;
+    int scale = 1;
 
 
     public MeshGenerator(float texScale)
     {
         this.texScale = texScale;
+
     }
 
-    public MeshGenerator(float texScale, MeshFilter filter, MeshCollider collider)
+    public MeshGenerator(float texScale,  MeshFilter filter, MeshCollider collider)
     {
         this.texScale = texScale;
+
         this.filter = filter;
         this.collider = collider;
     }
 
-    public void GenearateWallsFromTexture(Texture2D t, int width, int height, bool renderCollision = false){
+    public void GenearateWallsFromTexture(Texture2D t, int width, int height, int wallHeight, bool renderCollision = false){
 
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
             {
-                GenerateSquare(x, y, t.GetPixel(x, y), new Color(0f / 256f, 0f / 256f, 0f / 256f));
+                GenerateCube(x * scale, wallHeight * scale, y * scale, t.GetPixel(x, y),new Color(0f / 256f, 0f / 256f, 0f / 256f));
             }
         }
 
@@ -39,27 +42,75 @@ public class MeshGenerator  {
     }
 
 
-    void GenerateSquare(int x, int z, Color inputColor, Color targetColor)
+    public void GenerateFloor(Texture2D t, int x, int y, int z, bool renderCollision = true, int scale = 1)
+    {
+
+
+            verts.Add(new Vector3(x, y, z));
+            verts.Add(new Vector3(x, y, z + scale));
+            verts.Add(new Vector3(x + scale, y, z + scale));
+            verts.Add(new Vector3(x + scale, y, z));
+
+            GenerateSquareUVs(0, 0, 1);
+            GenerateSquareTris();
+
+            GenerateMesh();
+        
+    }
+
+    public void GenerateCube(int x, int y, int z,Color inputColor, Color targetColor)
     {
         if (WithinColorRange(targetColor, inputColor, 64))
         {
 
-            verts.Add(new Vector3(x, 1, z));
-            verts.Add(new Vector3(x, 1, z + 1));
-            verts.Add(new Vector3(x + 1, 1, z + 1));
-            verts.Add(new Vector3(x + 1, 1, z));
+            //Top
+            verts.Add(new Vector3(x, y + scale, z));
+            verts.Add(new Vector3(x, y + scale, z + scale));
+            verts.Add(new Vector3(x + scale, y + scale, z + scale));
+            verts.Add(new Vector3(x + scale, y + scale, z));
 
-            GenerateSquareUVs(0, 0);
+            GenerateSquareUVs(0, 2, texScale);
+            GenerateSquareTris();
+
+            //Front
+            verts.Add(new Vector3(x, y, z));
+            verts.Add(new Vector3(x, y + scale, z));
+            verts.Add(new Vector3(x + scale, y + scale, z));
+            verts.Add(new Vector3(x + scale, y, z));
+
+            GenerateSquareUVs(1, 2, texScale);
+            GenerateSquareTris();
+
+            //Left
+            verts.Add(new Vector3(x, y, z + scale));
+            verts.Add(new Vector3(x, y + scale, z + scale));
+            verts.Add(new Vector3(x , y + scale, z));
+            verts.Add(new Vector3(x, y, z));
+
+            GenerateSquareUVs(1, 2, texScale);
+            GenerateSquareTris();
+
+            //Back
+            verts.Add(new Vector3(x + scale, y, z + scale));
+            verts.Add(new Vector3(x + scale, y + scale, z + scale));
+            verts.Add(new Vector3(x, y + scale, z + scale));
+            verts.Add(new Vector3(x, y, z + scale));
+
+            GenerateSquareUVs(1, 2, texScale);
+            GenerateSquareTris();
+
+            //Right
+            verts.Add(new Vector3(x + scale, y, z));
+            verts.Add(new Vector3(x + scale, y + scale, z));
+            verts.Add(new Vector3(x + scale, y + scale, z + scale));
+            verts.Add(new Vector3(x + scale, y, z + scale));
+
+            GenerateSquareUVs(1, 2, texScale);
             GenerateSquareTris();
         }
     }
 
-    public void GenerateCube(int x, int z, Color inputColor, Color targetColor)
-    {
-
-    }
-
-    void GenerateSquareUVs(int texX, int texY)
+    void GenerateSquareUVs(float texX, float texY, float texScale)
     {
         uvs.Add(new Vector2(texX * texScale, texY * texScale));
         uvs.Add(new Vector2(texX * texScale, texY * texScale + texScale));

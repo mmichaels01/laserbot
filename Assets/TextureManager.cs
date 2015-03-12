@@ -67,6 +67,8 @@ public class TextureManager : MonoBehaviour {
 		textureArenaComponent.texture = textureArena;
 
 
+
+
 		pixels = webCamTextureArena.GetPixels32();
 
 		Texture2D textureBot = new Texture2D(webCamTextureBot1.width, webCamTextureBot1.height, TextureFormat.ARGB32, false);
