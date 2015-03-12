@@ -42,7 +42,7 @@ public class ArenaManager : MonoBehaviour {
 		{
 			for (int z = 0; z < size; z += 32)
 			{
-                //Resume here with chunk code
+				//Resume here with chunk code
 			}
 		}
 
