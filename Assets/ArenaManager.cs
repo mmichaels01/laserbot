@@ -74,6 +74,7 @@ public class ArenaManager : MonoBehaviour
     void UpdateTextureArena()
     {
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as Texture2D;
+        print(webcamTextureArena.width);
     }
 
     void DrawWalls()
