@@ -17,14 +17,34 @@ public class MeshGenerator  {
     public int zCoord;
     public int yCoord;
 
-    public float r = .117f;
-    public float g = .5f;
-    public float b = .117f;
+    //public float r = .117f;
+    //public float g = .5f;
+    //public float b = .117f;
+    public float r = .1f;
+    public float g = .1f;
+    public float b = .1f;
+
     public float colorComparisonStrength = 50f;
+    public bool[,] coordinateStateArray;
+    public int chunkSize;
+
 
     public MeshGenerator(float texScale)
     {
         this.texScale = texScale;
+    }
+
+    public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray, int chunkSize)
+    {
+        this.texScale = texScale;
+        this.obj = obj;
+        this.filter = obj.GetComponent<MeshFilter>();
+        this.collider = obj.GetComponent<MeshCollider>();
+        this.xCoord = Mathf.RoundToInt(obj.transform.position.x);
+        this.yCoord = Mathf.RoundToInt(obj.transform.position.y);
+        this.zCoord = Mathf.RoundToInt(obj.transform.position.z);
+        this.coordinateStateArray = coordinateStateArray;
+        this.chunkSize = chunkSize;
     }
 
     public MeshGenerator(float texScale,  MeshFilter filter, MeshCollider collider)
@@ -35,16 +55,16 @@ public class MeshGenerator  {
         this.collider = collider;
     }
 
-    public MeshGenerator(float texScale, MeshFilter filter, MeshCollider collider, GameObject gObj)
+    public MeshGenerator(float texScale, MeshFilter filter, MeshCollider collider, GameObject obj)
     {
         this.texScale = texScale;
         this.filter = filter;
         this.collider = collider;
 
-        this.obj = gObj;
-        this.xCoord = Mathf.RoundToInt(gObj.transform.position.x);
-        this.yCoord = Mathf.RoundToInt(gObj.transform.position.y);
-        this.zCoord = Mathf.RoundToInt(gObj.transform.position.z);
+        this.obj = obj;
+        this.xCoord = Mathf.RoundToInt(obj.transform.position.x);
+        this.yCoord = Mathf.RoundToInt(obj.transform.position.y);
+        this.zCoord = Mathf.RoundToInt(obj.transform.position.z);
     }
 
     public void GenerateWallsFromTexture(Texture2D t, int width, int height, int wallHeight, bool renderCollision = false){
@@ -59,6 +79,21 @@ public class MeshGenerator  {
 
         GenerateMesh();
 
+    }
+
+    public void GenerateWallsFromBoolArray(int width, int height, bool renderCollision = false)
+    {
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                if(coordinateStateArray[x + xCoord, y + zCoord]){
+                    GenerateVariableBox(x, 0 ,y);
+                }
+            }
+        }
+
+        GenerateMesh();
     }
 
 
@@ -89,7 +124,7 @@ public class MeshGenerator  {
             verts.Add(new Vector3(x + scale, y + scale, z + scale));
             verts.Add(new Vector3(x + scale, y + scale, z));
 
-            GenerateSquareUVs(0, 2, texScale);
+            GenerateSquareUVs(1, 2, texScale);
             GenerateSquareTris();
 
             //Front
@@ -129,6 +164,114 @@ public class MeshGenerator  {
             GenerateSquareTris();
         }
     }
+
+
+    public void GenerateCube(int x, int y, int z)
+    {
+            //Top
+            verts.Add(new Vector3(x, y + scale, z));
+            verts.Add(new Vector3(x, y + scale, z + scale));
+            verts.Add(new Vector3(x + scale, y + scale, z + scale));
+            verts.Add(new Vector3(x + scale, y + scale, z));
+
+            GenerateSquareUVs(1, 2, texScale);
+            GenerateSquareTris();
+
+            //Front
+            verts.Add(new Vector3(x, y, z));
+            verts.Add(new Vector3(x, y + scale, z));
+            verts.Add(new Vector3(x + scale, y + scale, z));
+            verts.Add(new Vector3(x + scale, y, z));
+
+            GenerateSquareUVs(1, 2, texScale);
+            GenerateSquareTris();
+
+            //Left
+            verts.Add(new Vector3(x, y, z + scale));
+            verts.Add(new Vector3(x, y + scale, z + scale));
+            verts.Add(new Vector3(x, y + scale, z));
+            verts.Add(new Vector3(x, y, z));
+
+            GenerateSquareUVs(1, 2, texScale);
+            GenerateSquareTris();
+
+            //Back
+            verts.Add(new Vector3(x + scale, y, z + scale));
+            verts.Add(new Vector3(x + scale, y + scale, z + scale));
+            verts.Add(new Vector3(x, y + scale, z + scale));
+            verts.Add(new Vector3(x, y, z + scale));
+
+            GenerateSquareUVs(1, 2, texScale);
+            GenerateSquareTris();
+
+            //Right
+            verts.Add(new Vector3(x + scale, y, z));
+            verts.Add(new Vector3(x + scale, y + scale, z));
+            verts.Add(new Vector3(x + scale, y + scale, z + scale));
+            verts.Add(new Vector3(x + scale, y, z + scale));
+
+            GenerateSquareUVs(1, 2, texScale);
+            GenerateSquareTris();
+    }
+
+    void GenerateVariableBox(int xStart, int yStart, int zStart){
+        int xEnd = xStart + 1;
+        int yEnd = yStart;
+        int zEnd = zStart;
+
+
+        while (xEnd < chunkSize && coordinateStateArray[xEnd - 1, zEnd])
+        {
+            coordinateStateArray[xEnd - 1, zEnd] = false;
+            xEnd++;
+        }
+
+        //Top
+        verts.Add(new Vector3(xStart, yStart + scale, zStart));
+        verts.Add(new Vector3(xStart, yStart + scale, zStart + scale));
+        verts.Add(new Vector3(xEnd, yStart + scale, zStart + scale));
+        verts.Add(new Vector3(xEnd, yStart + scale, zStart));
+
+        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareTris();
+
+        //Front
+        verts.Add(new Vector3(xStart, yStart, zStart));
+        verts.Add(new Vector3(xStart, yStart + scale, zStart));
+        verts.Add(new Vector3(xEnd, yStart + scale, zStart));
+        verts.Add(new Vector3(xEnd, yStart, zStart));
+
+        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareTris();
+
+        //Left
+        verts.Add(new Vector3(xStart, yStart, zStart + scale));
+        verts.Add(new Vector3(xStart, yStart + scale, zStart + scale));
+        verts.Add(new Vector3(xStart, yStart + scale, zStart));
+        verts.Add(new Vector3(xStart, yStart, zStart));
+
+        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareTris();
+
+        //Back
+        verts.Add(new Vector3(xEnd, yStart, zStart + scale));
+        verts.Add(new Vector3(xEnd, yStart + scale, zStart + scale));
+        verts.Add(new Vector3(xStart, yStart + scale, zStart + scale));
+        verts.Add(new Vector3(xStart, yStart, zStart + scale));
+
+        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareTris();
+
+        //Right
+        verts.Add(new Vector3(xEnd, yStart, zStart));
+        verts.Add(new Vector3(xEnd, yStart + scale, zStart));
+        verts.Add(new Vector3(xEnd, yStart + scale, zStart + scale));
+        verts.Add(new Vector3(xEnd, yStart, zStart + scale));
+
+        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareTris();
+    }
+    
 
     void GenerateSquareUVs(float texX, float texY, float texScale)
     {
