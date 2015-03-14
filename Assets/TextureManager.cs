@@ -18,22 +18,22 @@ public class TextureManager : MonoBehaviour {
 	WebCamTexture webCamTextureBot1;
 	WebCamTexture webCamTextureBot2;
 	WebCamTexture webCamTextureArena;
-    WebCamTexture webCamTexturePlayer;
+	WebCamTexture webCamTexturePlayer;
 	WebCamDevice bot1Cam;
 	WebCamDevice bot2Cam;
 	WebCamDevice arenaCam;
 
 
-    public GameObject arenaTextureObject;
-    public GameObject bot1TextureObject;
-    public GameObject bot2TextureObject;
-    public GameObject cameraTextObject;
-    public GameObject playerTextureObject;
+	public GameObject arenaTextureObject;
+	public GameObject bot1TextureObject;
+	public GameObject bot2TextureObject;
+	public GameObject cameraTextObject;
+	public GameObject playerTextureObject;
 
 	RawImage textureArenaComponent;
 	RawImage textureBot1Component;
 	RawImage textureBot2Component;
-    RawImage texturePlayerComponent;
+	RawImage texturePlayerComponent;
 	Text text;
 
 
@@ -50,18 +50,18 @@ public class TextureManager : MonoBehaviour {
 		
 		webCamTextureArena = new WebCamTexture(WebCamTexture.devices[0].name, 128, 128);
 		webCamTextureBot1 = new WebCamTexture(WebCamTexture.devices[1].name, 256, 256);
-        webCamTextureBot2 = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
-        webCamTexturePlayer = new WebCamTexture(WebCamTexture.devices[3].name, 256, 256);
+		webCamTextureBot2 = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
+		webCamTexturePlayer = new WebCamTexture(WebCamTexture.devices[3].name, 256, 256);
 
 		webCamTextureArena.Play();
 		webCamTextureBot1.Play();
-        webCamTextureBot2.Play();
-        webCamTexturePlayer.Play();
+		webCamTextureBot2.Play();
+		webCamTexturePlayer.Play();
 
-        textureArenaComponent = arenaTextureObject.GetComponent<RawImage>();
-        textureBot1Component = bot1TextureObject.GetComponent<RawImage>();
-        textureBot2Component = bot2TextureObject.GetComponent<RawImage>();
-        texturePlayerComponent = playerTextureObject.GetComponent<RawImage>();
+		textureArenaComponent = arenaTextureObject.GetComponent<RawImage>();
+		textureBot1Component = bot1TextureObject.GetComponent<RawImage>();
+		textureBot2Component = bot2TextureObject.GetComponent<RawImage>();
+		texturePlayerComponent = playerTextureObject.GetComponent<RawImage>();
 		text = cameraTextObject.GetComponent<Text>();
 
 		foreach (WebCamDevice cam in WebCamTexture.devices)
@@ -71,16 +71,16 @@ public class TextureManager : MonoBehaviour {
 
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
 		Color32[] pixelsArena = webCamTextureArena.GetPixels32();
-		Texture2D textureArena = new Texture2D(webCamTextureArena.width, webCamTextureArena.height, TextureFormat.ARGB32,false);
-		textureArena.SetPixels32(pixelsArena);
-		textureArena.Apply();
-		textureArenaComponent.texture = textureArena;
+        Texture2D textureArena = new Texture2D(webCamTextureArena.width, webCamTextureArena.height, TextureFormat.ARGB32, false);
+        textureArena.SetPixels32(pixelsArena);
+        textureArena.Apply();
+        textureArenaComponent.texture = textureArena;
 
 		textureBot1Component.texture = webCamTextureBot1;
-        textureBot2Component.texture = webCamTextureBot2;
-        texturePlayerComponent.texture = webCamTexturePlayer;
+		textureBot2Component.texture = webCamTextureBot2;
+		texturePlayerComponent.texture = webCamTexturePlayer;
 	}
 }

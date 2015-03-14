@@ -17,9 +17,6 @@ public class MeshGenerator  {
     public int zCoord;
     public int yCoord;
 
-    //public float r = .117f;
-    //public float g = .5f;
-    //public float b = .117f;
     public float r = .1f;
     public float g = .1f;
     public float b = .1f;
@@ -27,14 +24,15 @@ public class MeshGenerator  {
     public float colorComparisonStrength = 50f;
     public bool[,] coordinateStateArray;
     public int chunkSize;
+    public int arenaSize;
 
-
+    #region Constructors
     public MeshGenerator(float texScale)
     {
         this.texScale = texScale;
     }
 
-    public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray, int chunkSize)
+    public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray, int chunkSize, int arenaSize)
     {
         this.texScale = texScale;
         this.obj = obj;
@@ -45,6 +43,7 @@ public class MeshGenerator  {
         this.zCoord = Mathf.RoundToInt(obj.transform.position.z);
         this.coordinateStateArray = coordinateStateArray;
         this.chunkSize = chunkSize;
+        this.arenaSize = arenaSize;
     }
 
     public MeshGenerator(float texScale,  MeshFilter filter, MeshCollider collider)
@@ -67,6 +66,8 @@ public class MeshGenerator  {
         this.zCoord = Mathf.RoundToInt(obj.transform.position.z);
     }
 
+    #endregion Constructors
+
     public void GenerateWallsFromTexture(Texture2D t, int width, int height, int wallHeight, bool renderCollision = false){
 
         for (int x = 0; x < width; x++)
@@ -83,18 +84,20 @@ public class MeshGenerator  {
 
     public void GenerateWallsFromBoolArray(int width, int height, bool renderCollision = false)
     {
-        for (int x = 0; x < width; x++)
+        for (int i = 0; i < width; i++)
         {
-            for (int y = 0; y < height; y++)
+            for (int j = 0; j < height; j++)
             {
-                if(coordinateStateArray[x + xCoord, y + zCoord]){
-                    GenerateVariableBox(x, 0 ,y);
+                if(coordinateStateArray[i + xCoord, j + zCoord]){
+                    GenerateHorizontalBox(i, 0 , j);
                 }
             }
         }
 
         GenerateMesh();
     }
+
+
 
 
     public void GenerateFloor(Texture2D t, int x, int y, int z, bool renderCollision = true, int scale = 1)
@@ -165,7 +168,6 @@ public class MeshGenerator  {
         }
     }
 
-
     public void GenerateCube(int x, int y, int z)
     {
             //Top
@@ -214,15 +216,17 @@ public class MeshGenerator  {
             GenerateSquareTris();
     }
 
-    void GenerateVariableBox(int xStart, int yStart, int zStart){
-        int xEnd = xStart + 1;
+    void GenerateHorizontalBox(int xStart, int yStart, int zStart){
+        int xEnd = xStart;
         int yEnd = yStart;
         int zEnd = zStart;
 
 
-        while (xEnd < chunkSize && coordinateStateArray[xEnd - 1, zEnd])
+        //128 will "leak" over into neighboring chunks, setting 128 to xStart + chunkSize will contain it to its current chunk
+        //This is accomplished because this loop will continue turning off until the edge of the arena rather than the edge of the chunk
+        while (xEnd + xCoord < 128 && coordinateStateArray[xEnd + xCoord, zEnd + zCoord])
         {
-            coordinateStateArray[xEnd - 1, zEnd] = false;
+            coordinateStateArray[xEnd + xCoord, zEnd + zCoord] = false;
             xEnd++;
         }
 
@@ -241,7 +245,7 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xEnd, yStart + scale, zStart));
         verts.Add(new Vector3(xEnd, yStart, zStart));
 
-        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareUVs(2, 2, texScale);
         GenerateSquareTris();
 
         //Left
@@ -250,7 +254,7 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xStart, yStart + scale, zStart));
         verts.Add(new Vector3(xStart, yStart, zStart));
 
-        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareUVs(3, 2, texScale);
         GenerateSquareTris();
 
         //Back
@@ -259,7 +263,7 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xStart, yStart + scale, zStart + scale));
         verts.Add(new Vector3(xStart, yStart, zStart + scale));
 
-        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareUVs(4, 2, texScale);
         GenerateSquareTris();
 
         //Right
@@ -268,7 +272,7 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xEnd, yStart + scale, zStart + scale));
         verts.Add(new Vector3(xEnd, yStart, zStart + scale));
 
-        GenerateSquareUVs(1, 2, texScale);
+        GenerateSquareUVs(5, 2, texScale);
         GenerateSquareTris();
     }
     

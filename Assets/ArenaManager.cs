@@ -49,7 +49,7 @@ public class ArenaManager : MonoBehaviour
                 int index = wallChunks.Count - 1;
                 wallChunks[index].transform.position = (new Vector3(x, 0, z));
                 wallChunks[index].name = x + "-0-" + z;
-                chunkManagers.Add(new MeshGenerator(texScale, wallChunks[index], wallStateArray, arenaSize));
+                chunkManagers.Add(new MeshGenerator(texScale, wallChunks[index], wallStateArray, chunkSize, arenaSize));
             }
         }
 
@@ -65,7 +65,7 @@ public class ArenaManager : MonoBehaviour
         lastUpdate = Time.time;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         UpdateTextureArena();
         DrawWalls();
@@ -74,12 +74,11 @@ public class ArenaManager : MonoBehaviour
     void UpdateTextureArena()
     {
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as Texture2D;
-        print(webcamTextureArena.width);
     }
 
     void DrawWalls()
     {
-        if (Time.time - lastUpdate > 1f)
+        if (Time.time - lastUpdate > .1f)
         {
             UpdateWallArray(webcamTextureArena);
             floorManager.GenerateFloor(webcamTextureArena, 0, 0, 0, true, 128);
@@ -88,7 +87,10 @@ public class ArenaManager : MonoBehaviour
             foreach (var chunkManager in chunkManagers)
             {
                 chunkManager.GenerateWallsFromBoolArray(chunkSize, chunkSize, false);
+
             }
+            print(chunkManagers[0].xCoord);
+            print(chunkManagers[0].chunkSize);
         }
     }
 
