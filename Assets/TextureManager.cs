@@ -79,8 +79,8 @@ public class TextureManager : MonoBehaviour {
         textureArena.Apply();
         textureArenaComponent.texture = textureArena;
 
-		textureBot1Component.texture = webCamTextureBot1;
-		textureBot2Component.texture = webCamTextureBot2;
-		texturePlayerComponent.texture = webCamTexturePlayer;
+        //textureBot1Component.texture = webCamTextureBot1;
+        //textureBot2Component.texture = webCamTextureBot2;
+        //texturePlayerComponent.texture = webCamTexturePlayer;
 	}
 }

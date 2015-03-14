@@ -224,7 +224,7 @@ public class MeshGenerator  {
 
         //128 will "leak" over into neighboring chunks, setting 128 to xStart + chunkSize will contain it to its current chunk
         //This is accomplished because this loop will continue turning off until the edge of the arena rather than the edge of the chunk
-        while (xEnd + xCoord < 128 && coordinateStateArray[xEnd + xCoord, zEnd + zCoord])
+        while (xEnd + xCoord < arenaSize && coordinateStateArray[xEnd + xCoord, zEnd + zCoord])
         {
             coordinateStateArray[xEnd + xCoord, zEnd + zCoord] = false;
             xEnd++;
