@@ -28,7 +28,6 @@ public class BotController : MonoBehaviour
         IPEndPoint ep = new IPEndPoint(ip, 8080);
         try
         {
-            print("connecting");
             sock.Connect(ep);
         }
         finally
@@ -44,7 +43,6 @@ public class BotController : MonoBehaviour
         update = Time.time;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         
@@ -62,9 +60,9 @@ public class BotController : MonoBehaviour
             float x = Input.GetAxis("Horizontal");
             float y = Input.GetAxis("Vertical");
             Vector2 point = new Vector2(x, y);
-            print("Angle : " + Mathf.Atan2(point.y, point.x) * Mathf.Rad2Deg);
+
             point = point.normalized;
-            print(point);
+
             leftWheel = Mathf.Pow(point.y, 2);
             rightWheel = Mathf.Pow(point.y,2);
 

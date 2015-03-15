@@ -37,7 +37,6 @@ public class TextureManager : MonoBehaviour {
 	Text text;
 
 
-
 	void Awake()
 	{
 
@@ -48,15 +47,15 @@ public class TextureManager : MonoBehaviour {
 
 
 		
-		webCamTextureArena = new WebCamTexture(WebCamTexture.devices[0].name, 128, 128);
+		webCamTextureArena = new WebCamTexture(WebCamTexture.devices[0].name, 160, 120);
 		webCamTextureBot1 = new WebCamTexture(WebCamTexture.devices[1].name, 256, 256);
 		webCamTextureBot2 = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
 		webCamTexturePlayer = new WebCamTexture(WebCamTexture.devices[3].name, 256, 256);
 
 		webCamTextureArena.Play();
 		webCamTextureBot1.Play();
-		webCamTextureBot2.Play();
-		webCamTexturePlayer.Play();
+		//webCamTextureBot2.Play();
+		//webCamTexturePlayer.Play();
 
 		textureArenaComponent = arenaTextureObject.GetComponent<RawImage>();
 		textureBot1Component = bot1TextureObject.GetComponent<RawImage>();
@@ -64,23 +63,25 @@ public class TextureManager : MonoBehaviour {
 		texturePlayerComponent = playerTextureObject.GetComponent<RawImage>();
 		text = cameraTextObject.GetComponent<Text>();
 
+
 		foreach (WebCamDevice cam in WebCamTexture.devices)
 		{
 			text.text += cam.name + "\n";
 		}
-
 	}
 
 	void FixedUpdate()
 	{
-		Color32[] pixelsArena = webCamTextureArena.GetPixels32();
-        Texture2D textureArena = new Texture2D(webCamTextureArena.width, webCamTextureArena.height, TextureFormat.ARGB32, false);
-        textureArena.SetPixels32(pixelsArena);
-        textureArena.Apply();
-        textureArenaComponent.texture = textureArena;
+		//Color32[] pixelsArena = webCamTextureArena.GetPixels32();
+		//Texture2D textureArena = new Texture2D(webCamTextureArena.width, webCamTextureArena.height, TextureFormat.ARGB32, false);
+		//textureArena.SetPixels32(pixelsArena);
+		//textureArena.Apply();
+		//textureArenaComponent.texture = textureArena;
 
-        //textureBot1Component.texture = webCamTextureBot1;
-        //textureBot2Component.texture = webCamTextureBot2;
-        //texturePlayerComponent.texture = webCamTexturePlayer;
+		textureArenaComponent.texture = webCamTextureArena;
+
+		//textureBot1Component.texture = webCamTextureBot1;
+		//textureBot2Component.texture = webCamTextureBot2;
+		//texturePlayerComponent.texture = webCamTexturePlayer;
 	}
 }

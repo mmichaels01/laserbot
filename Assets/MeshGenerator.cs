@@ -23,8 +23,12 @@ public class MeshGenerator  {
 
     public float colorComparisonStrength = 50f;
     public bool[,] coordinateStateArray;
-    public int chunkSize;
-    public int arenaSize;
+
+
+    public int chunkWidth;
+    public int chunkHeight;
+    public int arenaWidth;
+    public int arenaHeight;
 
     #region Constructors
     public MeshGenerator(float texScale)
@@ -32,7 +36,7 @@ public class MeshGenerator  {
         this.texScale = texScale;
     }
 
-    public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray, int chunkSize, int arenaSize)
+    public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray, int chunkWidth, int chunkHeight, int arenaWidth, int arenaHeight)
     {
         this.texScale = texScale;
         this.obj = obj;
@@ -42,16 +46,21 @@ public class MeshGenerator  {
         this.yCoord = Mathf.RoundToInt(obj.transform.position.y);
         this.zCoord = Mathf.RoundToInt(obj.transform.position.z);
         this.coordinateStateArray = coordinateStateArray;
-        this.chunkSize = chunkSize;
-        this.arenaSize = arenaSize;
+
+        this.chunkWidth = chunkWidth;
+        this.chunkHeight = chunkHeight;
+
+        this.arenaWidth = arenaWidth;
+        this.arenaHeight = arenaHeight;
     }
 
-    public MeshGenerator(float texScale,  MeshFilter filter, MeshCollider collider)
+    public MeshGenerator(float texScale,  MeshFilter filter, MeshCollider collider, int arenaWidth, int arenaHeight)
     {
         this.texScale = texScale;
-
         this.filter = filter;
         this.collider = collider;
+        this.arenaHeight = arenaHeight;
+        this.arenaWidth = arenaWidth;
     }
 
     public MeshGenerator(float texScale, MeshFilter filter, MeshCollider collider, GameObject obj)
@@ -94,28 +103,26 @@ public class MeshGenerator  {
             }
         }
 
-        GenerateMesh();
+        GenerateMeshNoTexture(renderCollision);
     }
 
 
 
 
-    public void GenerateFloor(Texture2D t, int x, int y, int z, bool renderCollision = true, int scale = 1)
+    public void GenerateFloor(Texture2D t, int x, int y, int z, bool renderCollision = true)
     {
-
-
             verts.Add(new Vector3(x, y, z));
-            verts.Add(new Vector3(x, y, z + scale));
-            verts.Add(new Vector3(x + scale, y, z + scale));
-            verts.Add(new Vector3(x + scale, y, z));
+            verts.Add(new Vector3(x, y, z + arenaHeight));
+            verts.Add(new Vector3(x + arenaWidth, y, z + arenaHeight));
+            verts.Add(new Vector3(x + arenaWidth, y, z));
 
             GenerateSquareUVs(0, 0, 1);
             GenerateSquareTris();
 
-            GenerateMesh();
-        
+            GenerateMesh();  
     }
 
+    //Old individual cube generation
     public void GenerateCube(int x, int y, int z,Color inputColor, Color targetColor)
     {
         if (WithinColorRange(targetColor, inputColor, colorComparisonStrength))
@@ -224,7 +231,7 @@ public class MeshGenerator  {
 
         //128 will "leak" over into neighboring chunks, setting 128 to xStart + chunkSize will contain it to its current chunk
         //This is accomplished because this loop will continue turning off until the edge of the arena rather than the edge of the chunk
-        while (xEnd + xCoord < arenaSize && coordinateStateArray[xEnd + xCoord, zEnd + zCoord])
+        while (xEnd + xCoord < arenaWidth && coordinateStateArray[xEnd + xCoord, zEnd + zCoord])
         {
             coordinateStateArray[xEnd + xCoord, zEnd + zCoord] = false;
             xEnd++;
@@ -236,7 +243,6 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xEnd, yStart + scale, zStart + scale));
         verts.Add(new Vector3(xEnd, yStart + scale, zStart));
 
-        GenerateSquareUVs(1, 2, texScale);
         GenerateSquareTris();
 
         //Front
@@ -245,7 +251,6 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xEnd, yStart + scale, zStart));
         verts.Add(new Vector3(xEnd, yStart, zStart));
 
-        GenerateSquareUVs(2, 2, texScale);
         GenerateSquareTris();
 
         //Left
@@ -254,7 +259,6 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xStart, yStart + scale, zStart));
         verts.Add(new Vector3(xStart, yStart, zStart));
 
-        GenerateSquareUVs(3, 2, texScale);
         GenerateSquareTris();
 
         //Back
@@ -263,7 +267,6 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xStart, yStart + scale, zStart + scale));
         verts.Add(new Vector3(xStart, yStart, zStart + scale));
 
-        GenerateSquareUVs(4, 2, texScale);
         GenerateSquareTris();
 
         //Right
@@ -272,7 +275,6 @@ public class MeshGenerator  {
         verts.Add(new Vector3(xEnd, yStart + scale, zStart + scale));
         verts.Add(new Vector3(xEnd, yStart, zStart + scale));
 
-        GenerateSquareUVs(5, 2, texScale);
         GenerateSquareTris();
     }
     
@@ -313,18 +315,26 @@ public class MeshGenerator  {
         uvs.Clear();
     }
 
-    void GenerateMeshObj()
+    void GenerateMeshNoTexture(bool useCollider = false)
     {
-        MeshFilter filter = obj.GetComponent<MeshFilter>();
+        var vertsArr = verts.ToArray();
+        var trisArr = tris.ToArray();
         filter.mesh.Clear();
-        filter.mesh.vertices = verts.ToArray();
-        filter.mesh.triangles = tris.ToArray();
-        filter.mesh.uv = uvs.ToArray();
+        filter.mesh.vertices = vertsArr;
+        filter.mesh.triangles = trisArr;
         filter.mesh.RecalculateNormals();
+
+        if(useCollider){
+            collider.sharedMesh = null;
+            var m = new Mesh();
+            m.vertices = vertsArr;
+            m.triangles = trisArr;
+            m.RecalculateNormals();
+            collider.sharedMesh = m;
+        }
 
         verts.Clear();
         tris.Clear();
-        uvs.Clear();
     }
 
     bool WithinColorRange(Color inputColor, Color targetColor, float strength)

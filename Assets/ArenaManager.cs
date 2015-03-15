@@ -6,9 +6,13 @@ using UnityEngine.UI;
 
 public class ArenaManager : MonoBehaviour
 {
-    public Texture2D tileMap;
-    public int arenaSize;
-    public int chunkSize;
+
+    public int arenaWidth;
+    public int arenaHeight;
+    public int chunkWidth;
+    public int chunkHeight;
+
+    //public int chunkSize;
     public int wallScale;
     float texScale = .125f;
     public GameObject floorPrefab;
@@ -18,38 +22,33 @@ public class ArenaManager : MonoBehaviour
     public float colorComparisonStrength = 40f;
     public Color targetColor = new Color(.1f, .1f, .1f);
 
-    MeshFilter filter;
-    MeshCollider collider;
     List<MeshGenerator> chunkManagers;
     MeshGenerator floorManager;
-    MeshFilter floorFilter;
-    MeshCollider floorCollider;
-    Texture2D webcamTextureArena;
+    WebCamTexture webcamTextureArena;
     float lastUpdate;
-
+    int chunkIndex;
     bool[,] wallStateArray;
+
 
     void Start()
     {
         //Get the webcam texture
-        webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as Texture2D;
+        webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
 
         //Set the size of our bool array
-        wallStateArray = new bool[arenaSize, arenaSize];
+        wallStateArray = new bool[arenaWidth, arenaHeight];
 
         //Create the chunk list
-        filter = GetComponent<MeshFilter>();
-        collider = GetComponent<MeshCollider>();
         chunkManagers = new List<MeshGenerator>();
-        for (int x = 0; x < arenaSize; x += chunkSize)
+        for (int x = 0; x < arenaWidth; x += chunkWidth)
         {
-            for (int z = 0; z < arenaSize; z += chunkSize)
+            for (int z = 0; z < arenaHeight; z += chunkHeight)
             {
                 wallChunks.Add(Instantiate(wallPrefab));
                 int index = wallChunks.Count - 1;
                 wallChunks[index].transform.position = (new Vector3(x, 0, z));
                 wallChunks[index].name = x + "-0-" + z;
-                chunkManagers.Add(new MeshGenerator(texScale, wallChunks[index], wallStateArray, chunkSize, arenaSize));
+                chunkManagers.Add(new MeshGenerator(texScale, wallChunks[index], wallStateArray, chunkWidth, chunkHeight, arenaWidth, arenaHeight));
             }
         }
 
@@ -57,52 +56,69 @@ public class ArenaManager : MonoBehaviour
         floorPrefab = GameObject.Instantiate(floorPrefab);
         floorPrefab.transform.position = new Vector3(0, 0, 0);
         floorPrefab.name = "Arena Floor";
-        floorFilter = floorPrefab.GetComponent<MeshFilter>();
-        floorCollider = floorPrefab.GetComponent<MeshCollider>();
-        floorManager = new MeshGenerator(texScale, floorFilter, floorCollider);
-
+        floorManager = new MeshGenerator(texScale, floorPrefab.GetComponent<MeshFilter>(), floorPrefab.GetComponent<MeshCollider>(), arenaWidth, arenaHeight);
+        floorManager.GenerateFloor(Texture2D.blackTexture, 0, 0, 0, true);
 
         lastUpdate = Time.time;
+        chunkIndex = 0;
     }
 
     void FixedUpdate()
     {
-        UpdateTextureArena();
-        DrawWalls();
+        if (webcamTextureArena != null)
+        {
+
+            UpdateTextureArena();
+            DrawWalls();
+
+        }
+
+        else
+        {
+            UpdateTextureArena();
+        }
+          
     }
 
     void UpdateTextureArena()
     {
-        webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as Texture2D;
+        webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
     }
 
     void DrawWalls()
     {
+        ////Draw one each fixed update
+        //chunkManagers[chunkIndex].GenerateWallsFromBoolArray(chunkSize, chunkSize, false);
+        //chunkIndex++;
+        //if (chunkIndex == chunkManagers.Count)
+        //{
+        //    chunkIndex = 0;
+        //    UpdateWallArray(webcamTextureArena);
+        //}
+
+        //Draw them all each update
         if (Time.time - lastUpdate > .1f)
         {
             UpdateWallArray(webcamTextureArena);
-            floorManager.GenerateFloor(webcamTextureArena, 0, 0, 0, true, 128);
-            lastUpdate = Time.time;
-
-            foreach (var chunkManager in chunkManagers)
+            foreach (var chunk in chunkManagers)
             {
-                chunkManager.GenerateWallsFromBoolArray(chunkSize, chunkSize, false);
+                chunk.GenerateWallsFromBoolArray(chunkWidth, chunkHeight, false);
 
             }
-            print(chunkManagers[0].xCoord);
-            print(chunkManagers[0].chunkSize);
+            lastUpdate = Time.time;
         }
     }
 
-    void UpdateWallArray(Texture2D t)
+    void UpdateWallArray(WebCamTexture webcamTextureArena)
     {
-        for (int x = 0; x < arenaSize; x++)
-        {
-            for (int y = 0; y < arenaSize; y++)
+            for (int x = 0; x < arenaWidth; x++)
             {
-                wallStateArray[x, y] = IsWithinColorRange(t.GetPixel(x, y), targetColor);
+                for (int y = 0; y < arenaHeight; y++)
+                {
+                    wallStateArray[x, y] = IsWithinColorRange(webcamTextureArena.GetPixel(x, y), targetColor);
+                }
             }
-        }
+            print(webcamTextureArena.width + " " + webcamTextureArena.height);
     }
 
     bool IsWithinColorRange(Color inputColor, Color targetColor)
