@@ -47,10 +47,10 @@ public class TextureManager : MonoBehaviour {
 
 
 		
-		webCamTextureArena = new WebCamTexture(WebCamTexture.devices[0].name, 160, 120);
-		webCamTextureBot1 = new WebCamTexture(WebCamTexture.devices[1].name, 256, 256);
-		webCamTextureBot2 = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
-		webCamTexturePlayer = new WebCamTexture(WebCamTexture.devices[3].name, 256, 256);
+		webCamTextureArena = new WebCamTexture("Arena", 160, 120);
+		webCamTextureBot1 = new WebCamTexture(WebCamTexture.devices[0].name, 256, 256);
+		//webCamTextureBot2 = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
+		//webCamTexturePlayer = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
 
 		webCamTextureArena.Play();
 		webCamTextureBot1.Play();
