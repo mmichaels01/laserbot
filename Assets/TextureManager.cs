@@ -37,23 +37,18 @@ public class TextureManager : MonoBehaviour {
 	Text text;
 
 
-	void Awake()
-	{
-
-	}
-
 	// Use this for initialization
 	void Start () {
 
 
-		
-		webCamTextureArena = new WebCamTexture("Arena", 160, 120);
-		webCamTextureBot1 = new WebCamTexture(WebCamTexture.devices[0].name, 256, 256);
+
+        webCamTextureArena = new WebCamTexture("ArenaPhone", 320, 240);
+        webCamTextureBot1 = new WebCamTexture("LaserBot1", 256, 256);
 		//webCamTextureBot2 = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
 		//webCamTexturePlayer = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
 
 		webCamTextureArena.Play();
-		webCamTextureBot1.Play();
+        webCamTextureBot1.Play();
 		//webCamTextureBot2.Play();
 		//webCamTexturePlayer.Play();
 
@@ -78,6 +73,7 @@ public class TextureManager : MonoBehaviour {
 		//textureArena.Apply();
 		//textureArenaComponent.texture = textureArena;
 
+        textureBot1Component.texture = webCamTextureBot1;
 		textureArenaComponent.texture = webCamTextureArena;
 
 		//textureBot1Component.texture = webCamTextureBot1;

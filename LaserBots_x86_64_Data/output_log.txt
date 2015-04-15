@@ -2,65 +2,34 @@ Initialize engine version: 5.0.0b18 (4f6e03cdd363)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
-    Vendor:   NVIDIA
-    VRAM:     1990 MB
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\LaserBots\LaserBots_x86_64_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\LaserBots\LaserBots_x86_64_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\LaserBots\LaserBots_x86_64_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.070 seconds
-desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
+Platform assembly: D:\laserbot\LaserBots_x86_64_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\laserbot\LaserBots_x86_64_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\laserbot\LaserBots_x86_64_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\laserbot\LaserBots_x86_64_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\laserbot\LaserBots_x86_64_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\laserbot\LaserBots_x86_64_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\laserbot\LaserBots_x86_64_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\laserbot\LaserBots_x86_64_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.050 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\LaserBots\LaserBots_x86_64_Data\Managed\System.dll (this message is harmless)
-connecting
+Platform assembly: D:\laserbot\LaserBots_x86_64_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\laserbot\LaserBots_x86_64_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1b9c -> priority: 1 
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:Start() (at D:\LaserBots\Assets\BotController.cs:31)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 184c -> priority: 1 
-  Thread -> id: 15a4 -> priority: 1 
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -68,41 +37,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -110,41 +55,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -152,41 +73,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -194,41 +91,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -236,41 +109,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -278,41 +127,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -320,41 +145,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -362,41 +163,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -404,41 +181,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -446,41 +199,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -488,41 +217,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -530,41 +235,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -572,41 +253,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -614,41 +271,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -656,41 +289,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -698,41 +307,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -740,41 +325,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -782,41 +343,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -824,41 +361,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -866,41 +379,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -908,41 +397,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -950,41 +415,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -992,41 +433,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1034,41 +451,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1076,41 +469,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1118,41 +487,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1160,167 +505,161 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1328,41 +667,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1370,167 +685,161 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+0 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1538,41 +847,17 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1580,125 +865,107 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+1 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+1 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+1 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+1 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+1 1 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
@@ -1706,553 +973,115 @@ BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+1 0.5818768 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+1 0.4473086 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+1 0.2557659 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-Angle : 0
+1 0.1152021 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-(0.0, 0.0)
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0 0 - Wheels
+1 0 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-0
+160 120
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
+ArenaManager:UpdateWallArray(WebCamTexture) (at D:\laserbot\Assets\ArenaManager.cs:121)
+ArenaManager:DrawWalls() (at D:\laserbot\Assets\ArenaManager.cs:102)
+ArenaManager:FixedUpdate() (at D:\laserbot\Assets\ArenaManager.cs:72)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 
-32
+1 0 - Wheels
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:92)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-32
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-ArenaManager:DrawWalls() (at D:\LaserBots\Assets\ArenaManager.cs:93)
-ArenaManager:FixedUpdate() (at D:\LaserBots\Assets\ArenaManager.cs:71)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-Angle : 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:65)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-(0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:67)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
-
-0 0 - Wheels
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviour.gen.cs:108)
-BotController:FixedUpdate() (at D:\LaserBots\Assets\BotController.cs:96)
+BotController:FixedUpdate() (at D:\laserbot\Assets\BotController.cs:94)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviour.gen.cs Line: 108)
 

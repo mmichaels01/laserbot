@@ -23,7 +23,7 @@ public class BotController : MonoBehaviour
         sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,
             ProtocolType.Udp);
 
-        IPAddress ip = IPAddress.Parse("192.168.0.150");
+        IPAddress ip = IPAddress.Parse("192.168.0.151");
 
         IPEndPoint ep = new IPEndPoint(ip, 8080);
         try
