@@ -102,7 +102,7 @@ public class ArenaManager : MonoBehaviour
             UpdateWallArray(webcamTextureArena);
             foreach (var chunk in chunkManagers)
             {
-                chunk.GenerateWallsFromBoolArray(chunkWidth, chunkHeight, false);
+                chunk.GenerateWallsFromBoolArray(chunkWidth, chunkHeight, true);
 
             }
             lastUpdate = Time.time;

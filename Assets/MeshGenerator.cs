@@ -31,11 +31,7 @@ public class MeshGenerator  {
     public int arenaHeight;
 
     #region Constructors
-    public MeshGenerator(float texScale)
-    {
-        this.texScale = texScale;
-    }
-
+    //Wall Constructor
     public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray, int chunkWidth, int chunkHeight, int arenaWidth, int arenaHeight)
     {
         this.texScale = texScale;
@@ -54,6 +50,20 @@ public class MeshGenerator  {
         this.arenaHeight = arenaHeight;
     }
 
+    //Bot Constructor
+    public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray)
+    {
+        this.texScale = texScale;
+        this.obj = obj;
+        this.filter = obj.GetComponent<MeshFilter>();
+        this.collider = obj.GetComponent<MeshCollider>();
+        this.xCoord = Mathf.RoundToInt(obj.transform.position.x);
+        this.yCoord = Mathf.RoundToInt(obj.transform.position.y);
+        this.zCoord = Mathf.RoundToInt(obj.transform.position.z);
+        this.coordinateStateArray = coordinateStateArray;
+    }
+
+    //Floor Constructor
     public MeshGenerator(float texScale,  MeshFilter filter, MeshCollider collider, int arenaWidth, int arenaHeight)
     {
         this.texScale = texScale;
@@ -62,19 +72,6 @@ public class MeshGenerator  {
         this.arenaHeight = arenaHeight;
         this.arenaWidth = arenaWidth;
     }
-
-    public MeshGenerator(float texScale, MeshFilter filter, MeshCollider collider, GameObject obj)
-    {
-        this.texScale = texScale;
-        this.filter = filter;
-        this.collider = collider;
-
-        this.obj = obj;
-        this.xCoord = Mathf.RoundToInt(obj.transform.position.x);
-        this.yCoord = Mathf.RoundToInt(obj.transform.position.y);
-        this.zCoord = Mathf.RoundToInt(obj.transform.position.z);
-    }
-
     #endregion Constructors
 
     public void GenerateWallsFromTexture(Texture2D t, int width, int height, int wallHeight, bool renderCollision = false){
@@ -88,7 +85,6 @@ public class MeshGenerator  {
         }
 
         GenerateMesh();
-
     }
 
     public void GenerateWallsFromBoolArray(int width, int height, bool renderCollision = false)
@@ -106,8 +102,37 @@ public class MeshGenerator  {
         GenerateMeshNoTexture(renderCollision);
     }
 
+    public void GenerateBotFromBoolArray(bool renderCollision = false)
+    {
+        //for (int i = 0; i < width; i++)
+        //{
+        //    for (int j = 0; j < height; j++)
+        //    {
+        //        if (coordinateStateArray[i + xCoord, j + zCoord])
+        //        {
+        //            GenerateHorizontalBox(i, 0, j);
+        //        }
+        //    }
+        //}
 
+        for (int i = 0; i < coordinateStateArray.GetLength(0); i++)
+        {
+            for (int j = 0; j < coordinateStateArray.GetLength(1); j++)
+            {
+                if (coordinateStateArray[i, j])
+                {
+                    GenerateHorizontalBox(i, 0, j);
+                }
+            }
+        }
 
+        GenerateMeshNoTexture(renderCollision);
+    }
+
+    public void GenerateBot()
+    {
+
+    }
 
     public void GenerateFloor(Texture2D t, int x, int y, int z, bool renderCollision = true)
     {
@@ -119,7 +144,7 @@ public class MeshGenerator  {
             GenerateSquareUVs(0, 0, 1);
             GenerateSquareTris();
 
-            GenerateMesh();  
+            GenerateMeshNoTexture(true);  
     }
 
     //Old individual cube generation
