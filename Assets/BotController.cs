@@ -7,7 +7,8 @@ using System.Text;
 
 public class BotController : MonoBehaviour
 {
-    Socket sock;
+    Socket sock1;
+    Socket sock2;
     int bytesSent;
     int bytesSentThisUpdate;
     byte[] msg;
@@ -20,15 +21,21 @@ public class BotController : MonoBehaviour
     {
         bytesSent = 0;
         bytesSentThisUpdate = 0;
-        sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,
+        sock1 = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,
+            ProtocolType.Udp);
+        sock2 = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,
             ProtocolType.Udp);
 
-        IPAddress ip = IPAddress.Parse("192.168.0.151");
+        IPAddress ip1 = IPAddress.Parse("192.168.0.151");
+        IPAddress ip2 = IPAddress.Parse("192.168.0.152");
 
-        IPEndPoint ep = new IPEndPoint(ip, 8080);
+        IPEndPoint ep1 = new IPEndPoint(ip1, 8080);
+        IPEndPoint ep2 = new IPEndPoint(ip2, 8080);
+
         try
         {
-            sock.Connect(ep);
+            sock1.Connect(ep1);
+            sock2.Connect(ep2);
         }
         finally
         {
@@ -38,7 +45,8 @@ public class BotController : MonoBehaviour
         // Encode the data string into a byte array.
         byte[] msg = Encoding.ASCII.GetBytes("bot started");
         // Send the data through the socket.
-        bytesSent += sock.Send(msg);
+        bytesSent += sock1.Send(msg);
+        bytesSent += sock2.Send(msg);
 
         update = Time.time;
     }
@@ -50,10 +58,10 @@ public class BotController : MonoBehaviour
 
         if (Time.time - update > .1f)
         {
-            float leftWheel = Input.GetAxis("LeftWheel");
-            float rightWheel = Input.GetAxis("RightWheel");
-            float aimHorizontal = Input.GetAxis("AimHorizontal");
-            float aimVertical = Input.GetAxis("AimVertical");
+            float leftWheel1 = Input.GetAxis("LeftWheel");
+            float rightWheel1 = Input.GetAxis("RightWheel");
+            //float aimHorizontal = Input.GetAxis("AimHorizontal");
+            //float aimVertical = Input.GetAxis("AimVertical");
 
             #region Mike Keyboard Code
             
@@ -63,51 +71,44 @@ public class BotController : MonoBehaviour
 
             point = point.normalized;
 
-            leftWheel = Mathf.Pow(point.y, 2);
-            rightWheel = Mathf.Pow(point.y,2);
+            leftWheel1 = Mathf.Pow(point.y, 2);
+            rightWheel1 = Mathf.Pow(point.y,2);
 
             if (x < 0)
             {
-                rightWheel += Mathf.Pow(point.x, 2);
+                rightWheel1 += Mathf.Pow(point.x, 2);
             }
             else if (x > 0)
             {
-                leftWheel += Mathf.Pow(point.x, 2);
+                leftWheel1 += Mathf.Pow(point.x, 2);
             }
 
             if (y < 0)
             {
-                leftWheel *= -1;
-                rightWheel *= -1;
+                leftWheel1 *= -1;
+                rightWheel1 *= -1;
             }
             
             #endregion
 
             #region Ricky Joystick Code
-            if (leftWheel == 0 && rightWheel == 0)
-            {
-                leftWheel = jstick.LeftWheel();
-                rightWheel = jstick.RightWheel();
-            }
+            float leftWheel2 = jstick.LeftWheel();
+            float rightWheel2 = jstick.RightWheel();
+
             #endregion
 
-            print(leftWheel + " " + rightWheel + " - Wheels");
+            print(leftWheel1 + " " + rightWheel1 + " - Wheels");
 
 
-            //if (!Mathf.Approximately(leftWheel, 0) || !Mathf.Approximately(rightWheel, 0))
-            //{
-            string msgWheels = "wheels," + leftWheel + "," + rightWheel;
-            msg = Encoding.ASCII.GetBytes(msgWheels);
-            bytesSent += sock.Send(msg);
-            //}
+            string msgWheels1 = "wheels," + leftWheel1 + "," + rightWheel1;
+            string msgWheels2 = "wheels," + leftWheel2 + "," + rightWheel2;
 
-            if (!Mathf.Approximately(aimHorizontal, 0) || !Mathf.Approximately(aimVertical, 0))
-            {
+            msg = Encoding.ASCII.GetBytes(msgWheels1);
+            bytesSent += sock1.Send(msg);
+            msg = Encoding.ASCII.GetBytes(msgWheels2);
+            bytesSent += sock2.Send(msg);
 
-                string msgCamera = "camera" + "," + aimHorizontal + "," + aimVertical;
-                msg = Encoding.ASCII.GetBytes(msgCamera);
-                bytesSent += sock.Send(msg);
-            }
+
 
             update = Time.time;
         }

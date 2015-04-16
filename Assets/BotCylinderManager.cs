@@ -4,28 +4,32 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 
-public class BotManager : MonoBehaviour {
+public class BotCylinderManager : MonoBehaviour {
 
 
     public float colorComparisonStrength = 40f;
     public Color targetColor = new Color(.1f, .1f, .1f);
     public GameObject arenaCamera;
-    public GameObject botPrefab;
 
     WebCamTexture webcamTextureArena;
     float lastUpdate;
     bool[,] robotStateArray;
-    MeshGenerator botManager;
     int arenaWidth = 160;
     int arenaHeight = 120;
 
+    int numPixels;
+    float radius;
+    float xTotal;
+    float zTotal;
+    float xAverage;
+    float zAverage;
+
     void Start()
     {
-        //Get the webcam texture
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
-        botPrefab = GameObject.Instantiate(botPrefab);
+        numPixels = 0;
+        radius = 0;
         robotStateArray = new bool[arenaWidth, arenaHeight];
-        botManager = new MeshGenerator(1, botPrefab, robotStateArray, arenaWidth, arenaHeight);
         lastUpdate = Time.time;
     }
 
@@ -57,8 +61,19 @@ public class BotManager : MonoBehaviour {
         //Draw them all each update
         if (Time.time - lastUpdate > .1f)
         {
+            numPixels = 0;
+            xTotal = 0;
+            zTotal = 0;
             UpdateRobotArray(webcamTextureArena);
-            botManager.GenerateBotFromBoolArray(true);
+
+            if (numPixels > 10)
+            {
+                radius = Mathf.Sqrt((numPixels / Mathf.PI));
+                transform.localScale = new Vector3(radius, .1f, radius);
+                xAverage = xTotal / numPixels;
+                zAverage = zTotal / numPixels;
+                transform.position = new Vector3(xAverage, .5f, zAverage);
+            }
             lastUpdate = Time.time;
         }
     }
@@ -70,9 +85,13 @@ public class BotManager : MonoBehaviour {
             for (int y = 0; y < arenaHeight; y++)
             {
                 robotStateArray[x, y] = IsWithinColorRange(webcamTextureArena.GetPixel(x, y), targetColor);
+                if (robotStateArray[x, y])
+                {
+                    xTotal += x;
+                    zTotal += y;
+                }
             }
         }
-        //print(webcamTextureArena.width + " " + webcamTextureArena.height);
     }
 
     bool IsWithinColorRange(Color inputColor, Color targetColor)
@@ -81,6 +100,7 @@ public class BotManager : MonoBehaviour {
             && Mathf.Abs(targetColor.g - inputColor.g) < colorComparisonStrength / 256f
             && Mathf.Abs(targetColor.b - inputColor.b) < colorComparisonStrength / 256f)
         {
+            numPixels++;
             return true;
         }
 

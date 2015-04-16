@@ -118,7 +118,7 @@ public class ArenaManager : MonoBehaviour
                     wallStateArray[x, y] = IsWithinColorRange(webcamTextureArena.GetPixel(x, y), targetColor);
                 }
             }
-            print(webcamTextureArena.width + " " + webcamTextureArena.height);
+            //print(webcamTextureArena.width + " " + webcamTextureArena.height);
     }
 
     bool IsWithinColorRange(Color inputColor, Color targetColor)
