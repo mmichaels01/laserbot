@@ -10,24 +10,23 @@ public class BotManager : MonoBehaviour {
     public float colorComparisonStrength = 40f;
     public Color targetColor = new Color(.1f, .1f, .1f);
     public GameObject arenaCamera;
+    public GameObject botPrefab;
 
     WebCamTexture webcamTextureArena;
     float lastUpdate;
     bool[,] robotStateArray;
     MeshGenerator botManager;
-    int arenaWidth;
-    int arenaHeight;
-
-    GameObject botPrefab;
+    int arenaWidth = 160;
+    int arenaHeight = 120;
 
     void Start()
     {
         //Get the webcam texture
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
-        botManager = new MeshGenerator(1, botPrefab, robotStateArray);
+        botPrefab = GameObject.Instantiate(botPrefab);
+        robotStateArray = new bool[arenaWidth, arenaHeight];
+        botManager = new MeshGenerator(1, botPrefab, robotStateArray, arenaWidth, arenaHeight);
         lastUpdate = Time.time;
-        arenaWidth = 160;
-        arenaHeight = 120;
     }
 
     void FixedUpdate()

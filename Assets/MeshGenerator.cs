@@ -51,7 +51,7 @@ public class MeshGenerator  {
     }
 
     //Bot Constructor
-    public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray)
+    public MeshGenerator(float texScale, GameObject obj, bool[,] coordinateStateArray, int arenaWidth, int arenaHeight)
     {
         this.texScale = texScale;
         this.obj = obj;
@@ -61,6 +61,8 @@ public class MeshGenerator  {
         this.yCoord = Mathf.RoundToInt(obj.transform.position.y);
         this.zCoord = Mathf.RoundToInt(obj.transform.position.z);
         this.coordinateStateArray = coordinateStateArray;
+        this.arenaWidth = arenaWidth;
+        this.arenaHeight = arenaHeight;
     }
 
     //Floor Constructor
@@ -104,24 +106,14 @@ public class MeshGenerator  {
 
     public void GenerateBotFromBoolArray(bool renderCollision = false)
     {
-        //for (int i = 0; i < width; i++)
-        //{
-        //    for (int j = 0; j < height; j++)
-        //    {
-        //        if (coordinateStateArray[i + xCoord, j + zCoord])
-        //        {
-        //            GenerateHorizontalBox(i, 0, j);
-        //        }
-        //    }
-        //}
 
-        for (int i = 0; i < coordinateStateArray.GetLength(0); i++)
+        for (int i = 0; i < arenaWidth; i++)
         {
-            for (int j = 0; j < coordinateStateArray.GetLength(1); j++)
+            for (int j = 0; j < arenaHeight; j++)
             {
                 if (coordinateStateArray[i, j])
                 {
-                    GenerateHorizontalBox(i, 0, j);
+                    GenerateCube(i, 0, j);
                 }
             }
         }
@@ -255,7 +247,7 @@ public class MeshGenerator  {
 
 
         //128 will "leak" over into neighboring chunks, setting 128 to xStart + chunkSize will contain it to its current chunk
-        //This is accomplished because this loop will continue turning off until the edge of the arena rather than the edge of the chunk
+        //This is accomplished because this loop will continue turning off bools until the edge of the arena rather than the edge of the chunk
         while (xEnd + xCoord < arenaWidth && coordinateStateArray[xEnd + xCoord, zEnd + zCoord])
         {
             coordinateStateArray[xEnd + xCoord, zEnd + zCoord] = false;
