@@ -19,19 +19,15 @@ public class Ball : MonoBehaviour {
 	Text p2Text;
 	Text extraText;
 
-	Vector3 prevVelocity;
-
 	int intro = 1;
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
-		rb.velocity = new Vector3(speed, 0, RndZ());
         lastX = rb.velocity.x;
         lastZ = rb.velocity.z;
 		p1Text = GameObject.Find("p1Score").GetComponent<Text>();
 		p2Text = GameObject.Find("p2Score").GetComponent<Text>();
 		extraText = GameObject.Find("ExtraText").GetComponent<Text>();
-		prevVelocity = rb.velocity;
 	}
 
     void FixedUpdate()
@@ -49,14 +45,18 @@ public class Ball : MonoBehaviour {
 				else
 					Delay();
 
-				prevVelocity = rb.velocity;
+				lastX = rb.velocity.x;
 			}
 		}
 		else
 		{
 			intro++;
-			if (intro != 50)
+			if (intro > 120)
+			{
 				intro = 0;
+				extraText.text = "";
+				rb.velocity = new Vector3(speed, 0, RndZ());
+			}
 		}
     }
 
@@ -94,7 +94,7 @@ public class Ball : MonoBehaviour {
 			if (p2Score >= 2)
 			{
 				extraText.text = "Player 2 Wins!";
-				//GAMEOVER = true;
+				GAMEOVER = true;
 			}
 			else
 			{
@@ -111,7 +111,7 @@ public class Ball : MonoBehaviour {
 			if (p1Score >= 2)
 			{
 				extraText.text = "Player 1 Wins!";
-				//GAMEOVER = true;
+				GAMEOVER = true;
 			}
 			else
 			{
@@ -139,24 +139,13 @@ public class Ball : MonoBehaviour {
 
 	void HandCollision()
 	{
-		if (rb.velocity.x < speed - 10 && rb.velocity.x > 2 && prevVelocity.x > 0) 
-		{
+		if (rb.velocity.x < speed - 10 && rb.velocity.x > 2 && lastX > 0) 
 			rb.velocity = new Vector3 (-speed, 0f, rb.velocity.z);
-			lastX = -speed;
-		}
-		else if (rb.velocity.x > -speed+10 && rb.velocity.x < -2 && prevVelocity.x < 0)
-		{
+		else if (rb.velocity.x > -speed+10 && rb.velocity.x < -2 && lastX < 0)
 			rb.velocity = new Vector3 (speed, 0f, rb.velocity.z);
-			lastX = speed;
-		}
 		else if (rb.velocity.x <= 2 && rb.velocity.x >= 0)
 			rb.velocity = new Vector3(-speed, 0f, rb.velocity.z);
 		else if (rb.velocity.x >= -2 && rb.velocity.x <= 0)
 			rb.velocity = new Vector3(speed, 0f, rb.velocity.z);
-		//if (rb.velocity.x < 79.0f && rb.velocity.x > -79.0f )
-		//{
-		//	rb.velocity = new Vector3(-lastX,0f,rb.velocity.z);
-		//	lastX = -lastX;
-		//}
 	}
 }
