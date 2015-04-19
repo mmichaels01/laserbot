@@ -83,12 +83,11 @@ public class BallCylinderManager : MonoBehaviour {
 
             }
 
-            print("s" + startTime);
-            print("e" + endTime);
-            if (startTime > 0 && endTime > 0 && (transform.position.x < 25))// || transform.position.x > arenaWidth - 10 || transform.position.z < 10 || transform.position.z > arenaHeight - 10))
+            float timeDiff = endTime - startTime;
+
+            if (startTime > 0 && endTime > 0 && (transform.position.x < 25) && timeDiff > .01f)// || transform.position.x > arenaWidth - 10 || transform.position.z < 10 || transform.position.z > arenaHeight - 10))
             {
                 print("Setting velocity");
-                float timeDiff = endTime - startTime;
                 rb.AddForce(new Vector3(((endPos.x - startPos.x) / (timeDiff)) * 4.0f, 0f, ((endPos.z - startPos.z) / (timeDiff)) * 4.0f), ForceMode.VelocityChange);
                 //rb.velocity = new Vector3((endPos.x - startPos.x) / (timeDiff), 0f, (endPos.z - startPos.z) / (timeDiff));
                 rolling = true;
