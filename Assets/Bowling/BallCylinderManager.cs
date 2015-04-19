@@ -36,6 +36,8 @@ public class BallCylinderManager : MonoBehaviour {
 
     bool rolling;
 
+    GameObject[] bumpers;
+
     void Start()
     {
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
@@ -46,6 +48,8 @@ public class BallCylinderManager : MonoBehaviour {
         lastUpdate = Time.time;
         startTime = 0;
         endTime = 0;
+
+        bumpers = GameObject.FindGameObjectsWithTag("Bumper");
     }
 
     void Update()
@@ -95,6 +99,21 @@ public class BallCylinderManager : MonoBehaviour {
                 UpdateTextureArena();
             }
 
+        }
+
+        if (Input.GetKeyDown("b"))
+        {
+            foreach(GameObject bumper in bumpers ){
+                if (bumper.activeSelf)
+                {
+                    bumper.SetActive(false);
+                    
+                }
+                else
+                {
+                    bumper.SetActive(true);
+                }
+            }
         }
 
     }
@@ -153,5 +172,11 @@ public class BallCylinderManager : MonoBehaviour {
         }
 
         return false;
+    }
+
+    
+    void OnTriggerEnter()
+    {
+        rb.velocity = (new Vector3(rb.velocity.x, rb.velocity.y, -rb.velocity.z));
     }
 }
