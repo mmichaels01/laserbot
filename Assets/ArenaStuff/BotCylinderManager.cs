@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 
-public class BotCylinderManager : MonoBehaviour {
+public class BotCylinderManager : MonoBehaviour
+{
 
 
     public float colorComparisonStrength = 40f;
@@ -24,6 +25,8 @@ public class BotCylinderManager : MonoBehaviour {
     float xAverage;
     float zAverage;
 
+    Vector3 lastPosition;
+
     void Start()
     {
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
@@ -31,6 +34,7 @@ public class BotCylinderManager : MonoBehaviour {
         radius = 0;
         robotStateArray = new bool[arenaWidth, arenaHeight];
         lastUpdate = Time.time;
+        lastPosition = transform.position;
     }
 
     void FixedUpdate()
@@ -43,11 +47,40 @@ public class BotCylinderManager : MonoBehaviour {
             DrawBot();
 
         }
-
         else
         {
             UpdateTextureArena();
         }
+
+        float distance = Vector3.Distance(lastPosition, transform.position);
+        if (distance > 10f)
+        {
+            float op = transform.position.x - lastPosition.x;
+            float adj = transform.position.z - lastPosition.z;
+            float angle = 0f;
+
+            if ((op > 0f && adj > 0f) || ((op > 0f && adj < 0f)))
+            {
+                angle = Mathf.Rad2Deg * Mathf.Acos(adj / distance);
+            }
+
+            else if ((op < 0f && adj > 0f) || (op < 0f && adj < 0f))
+            {
+                angle = 360f - (Mathf.Rad2Deg * Mathf.Acos(adj / distance));
+            }
+            else
+            {
+                angle = 0f;
+                print("Probably shouldn't be in this condition");
+            }
+
+            transform.localRotation = Quaternion.AngleAxis(angle, Vector3.up);
+            //print(Mathf.Rad2Deg * Mathf.Acos(adj / distance));
+            //print("Updating angle");
+            lastPosition = transform.position;
+        }
+
+
 
     }
 
@@ -55,6 +88,7 @@ public class BotCylinderManager : MonoBehaviour {
     {
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
     }
+
 
     void DrawBot()
     {
@@ -105,6 +139,11 @@ public class BotCylinderManager : MonoBehaviour {
         }
 
         return false;
+    }
+
+    void Rotate(float angle)
+    {
+        transform.Rotate(Vector3.up, angle);
     }
 
 }
