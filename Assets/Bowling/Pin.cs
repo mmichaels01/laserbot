@@ -9,7 +9,10 @@ public class Pin : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
 	}
 	
-	void Update () {
-	
-	}
+    bool Fallen()
+    {
+        if (transform.rotation.z != 0)
+            return true;
+        return false;
+    }
 }
