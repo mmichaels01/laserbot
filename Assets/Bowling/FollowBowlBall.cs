@@ -5,14 +5,14 @@ using System.Collections.Generic;
 public class FollowBowlBall : MonoBehaviour
 {
 
-    GameObject ball;
+    public GameObject ball;
     List<GameObject> pins = new List<GameObject>();
 
 	void Start () {
-        ball = GameObject.Find("Ball");
+        //Vector3 
 
-        float pinHeight = 10;
-        float pinWidth = 5;
+        float pinHeight = 20;
+        float pinWidth = 7;
         pins.Add(GameObject.CreatePrimitive(PrimitiveType.Cube));
         pins[pins.Count - 1].transform.position = new Vector3(-450,0.5f,70);
         pins[pins.Count - 1].transform.localScale = new Vector3(pinWidth, pinHeight, pinWidth);
