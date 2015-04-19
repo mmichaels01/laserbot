@@ -59,10 +59,7 @@ public class BotController : MonoBehaviour
 
         if (Time.time - update > .5f)
         {
-            float leftWheel1 = Input.GetAxis("LeftWheel");
-            float rightWheel1 = Input.GetAxis("RightWheel");
-            //float aimHorizontal = Input.GetAxis("AimHorizontal");
-            //float aimVertical = Input.GetAxis("AimVertical");
+
 
             #region Mike Keyboard Code
 
@@ -72,8 +69,8 @@ public class BotController : MonoBehaviour
 
             point = point.normalized;
 
-            leftWheel1 = Mathf.Pow(point.y, 2);
-            rightWheel1 = Mathf.Pow(point.y, 2);
+            float leftWheel1 = Mathf.Pow(point.y, 2);
+            float rightWheel1 = Mathf.Pow(point.y, 2);
 
             if (x < 0)
             {

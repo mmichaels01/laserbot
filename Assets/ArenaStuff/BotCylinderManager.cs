@@ -55,24 +55,24 @@ public class BotCylinderManager : MonoBehaviour
         float distance = Vector3.Distance(lastPosition, transform.position);
         if (distance > 10f)
         {
-            float op = transform.position.x - lastPosition.x;
-            float adj = transform.position.z - lastPosition.z;
-            float angle = 0f;
+            //float op = transform.position.x - lastPosition.x;
+            //float adj = transform.position.z - lastPosition.z;
+            float angle = BotHelper.GetAngle(lastPosition, transform.position, distance);
 
-            if ((op > 0f && adj > 0f) || ((op > 0f && adj < 0f)))
-            {
-                angle = Mathf.Rad2Deg * Mathf.Acos(adj / distance);
-            }
+            //if ((op > 0f && adj > 0f) || ((op > 0f && adj < 0f)))
+            //{
+            //    angle = Mathf.Rad2Deg * Mathf.Acos(adj / distance);
+            //}
 
-            else if ((op < 0f && adj > 0f) || (op < 0f && adj < 0f))
-            {
-                angle = 360f - (Mathf.Rad2Deg * Mathf.Acos(adj / distance));
-            }
-            else
-            {
-                angle = 0f;
-                print("Probably shouldn't be in this condition");
-            }
+            //else if ((op < 0f && adj > 0f) || (op < 0f && adj < 0f))
+            //{
+            //    angle = 360f - (Mathf.Rad2Deg * Mathf.Acos(adj / distance));
+            //}
+            //else
+            //{
+            //    angle = 0f;
+            //    print("Probably shouldn't be in this condition");
+            //}
 
             transform.localRotation = Quaternion.AngleAxis(angle, Vector3.up);
             //print(Mathf.Rad2Deg * Mathf.Acos(adj / distance));
