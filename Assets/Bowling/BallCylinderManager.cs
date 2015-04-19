@@ -34,6 +34,8 @@ public class BallCylinderManager : MonoBehaviour {
     Vector3 startPos;
     Vector3 endPos;
 
+    bool rolling;
+
     void Start()
     {
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
@@ -48,44 +50,51 @@ public class BallCylinderManager : MonoBehaviour {
 
     void Update()
     {
-        if (webcamTextureArena != null && endTime < 1)
+        if (!rolling)
         {
-            UpdateTextureArena();
-            UpdateRobotArray(webcamTextureArena);
-            DrawBot();
-        }
-
-        if (Mathf.Approximately(0f, startTime) && numPixels > 10)
-        {
-            startTime = Time.time;
-            startPos = transform.position;
-        }
-
-        if (!Mathf.Approximately(0f, startTime) && Mathf.Approximately(0f,endTime))
-        {
-            print("x" + transform.position.x);
-            print("z" + transform.position.z);
-
-
-            if (transform.position.x < 25)
+            if (webcamTextureArena != null && endTime < 1)
             {
-                endTime = Time.time;
-                endPos = transform.position;
+                UpdateTextureArena();
+                UpdateRobotArray(webcamTextureArena);
+                DrawBot();
             }
 
-        }
+            if (Mathf.Approximately(0f, startTime) && numPixels > 10)
+            {
+                startTime = Time.time;
+                startPos = transform.position;
+            }
 
-        print("s" + startTime);
-        print("e" + endTime);
-        if (startTime > 0 && endTime > 0 && (transform.position.x < 25))// || transform.position.x > arenaWidth - 10 || transform.position.z < 10 || transform.position.z > arenaHeight - 10))
-        {
-            float timeDiff = endTime - startTime;
-            rb.velocity = new Vector3((endPos.x - startPos.x) / (timeDiff),0f,(endPos.z - startPos.z) / (timeDiff));
-        }
+            if (!Mathf.Approximately(0f, startTime) && Mathf.Approximately(0f, endTime))
+            {
+                print("x" + transform.position.x);
+                print("z" + transform.position.z);
 
-        else
-        {
-            UpdateTextureArena();
+
+                if (transform.position.x < 25)
+                {
+                    endTime = Time.time;
+                    endPos = transform.position;
+                }
+
+            }
+
+            print("s" + startTime);
+            print("e" + endTime);
+            if (startTime > 0 && endTime > 0 && (transform.position.x < 25))// || transform.position.x > arenaWidth - 10 || transform.position.z < 10 || transform.position.z > arenaHeight - 10))
+            {
+                print("Setting velocity");
+                float timeDiff = endTime - startTime;
+                rb.AddForce(new Vector3((endPos.x - startPos.x) / (timeDiff), 0f, (endPos.z - startPos.z) / (timeDiff)), ForceMode.VelocityChange);
+                //rb.velocity = new Vector3((endPos.x - startPos.x) / (timeDiff), 0f, (endPos.z - startPos.z) / (timeDiff));
+                rolling = true;
+            }
+
+            else
+            {
+                UpdateTextureArena();
+            }
+
         }
 
     }
@@ -108,7 +117,7 @@ public class BallCylinderManager : MonoBehaviour {
             if (numPixels > 10)
             {
                 radius = Mathf.Sqrt((numPixels / Mathf.PI));
-                transform.localScale = new Vector3(radius, .1f, radius);
+                transform.localScale = new Vector3(radius, radius, radius);
                 xAverage = xTotal / numPixels;
                 zAverage = zTotal / numPixels;
                 transform.position = new Vector3(xAverage, .5f, zAverage);
