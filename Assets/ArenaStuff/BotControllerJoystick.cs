@@ -7,11 +7,18 @@ using System.Text;
 
 public class BotControllerJoystick : MonoBehaviour
 {
+
+
+
+    Socket sock1;
     Socket sock2;
     int bytesSent;
     int bytesSentThisUpdate;
     byte[] msg;
     float update;
+
+    public string ip;
+
 
     Joystick jstick = new Joystick();
 
@@ -20,16 +27,18 @@ public class BotControllerJoystick : MonoBehaviour
     {
         bytesSent = 0;
         bytesSentThisUpdate = 0;
+        sock1 = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,
+            ProtocolType.Udp);
         sock2 = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,
             ProtocolType.Udp);
 
-        IPAddress ip2 = IPAddress.Parse("192.168.0.152");
+        IPAddress ip1 = IPAddress.Parse(ip);
 
-        IPEndPoint ep2 = new IPEndPoint(ip2, 8080);
+        IPEndPoint ep1 = new IPEndPoint(ip1, 8080);
 
         try
         {
-            sock2.Connect(ep2);
+            sock1.Connect(ep1);
         }
         finally
         {
@@ -39,36 +48,56 @@ public class BotControllerJoystick : MonoBehaviour
         // Encode the data string into a byte array.
         byte[] msg = Encoding.ASCII.GetBytes("bot started");
         // Send the data through the socket.
-        bytesSent += sock2.Send(msg);
+        bytesSent += sock1.Send(msg);
 
         update = Time.time;
     }
 
     void FixedUpdate()
     {
-        
+
         bytesSentThisUpdate = 0;
 
-        if (Time.time - update > .1f)
+        if (Time.time - update > .5f)
         {
 
-            #region Ricky Joystick Code
-            float leftWheel2 = jstick.LeftWheel();
-            float rightWheel2 = jstick.RightWheel();
-
-            #endregion
+            float leftWheel1 = jstick.LeftWheel();
+            float rightWheel1 = jstick.RightWheel();
 
 
+            if (leftWheel1 > .1 && rightWheel1 > .1)
+            {
+                //Going forward
+            }
 
-            string msgWheels2 = "wheels," + leftWheel2 + "," + rightWheel2;
+            else if (leftWheel1 > .1 && rightWheel1 < .1)
+            {
+                gameObject.SendMessage("Rotate", 30);
+            }
 
-            msg = Encoding.ASCII.GetBytes(msgWheels2);
-            bytesSent += sock2.Send(msg);
+            else if (leftWheel1 < .1 && rightWheel1 > .1)
+            {
+                gameObject.SendMessage("Rotate", -30);
 
+            }
+
+            print(leftWheel1 + " " + rightWheel1 + " - Wheels");
+
+
+            string msgWheels1 = "wheels," + leftWheel1 + "," + rightWheel1;
+
+
+            IssueCommand(msgWheels1);
 
 
             update = Time.time;
         }
+    }
+
+    void IssueCommand(String message)
+    {
+        msg = Encoding.ASCII.GetBytes(message);
+        bytesSent += sock1.Send(msg);
     }
 
 

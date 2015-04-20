@@ -7,10 +7,6 @@ using System.Text;
 
 public class BotController : MonoBehaviour
 {
-
-    public GameObject botObject;
-
-
     Socket sock1;
     Socket sock2;
     int bytesSent;
