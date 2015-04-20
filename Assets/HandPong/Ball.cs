@@ -3,11 +3,12 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Ball : MonoBehaviour {
+    public int MAX_SCORE;
     Rigidbody rb;
     float lastX;
     float lastZ;
 
-	int speed = 75;
+	public int speed = 75;
 
 	float p1Score = 0;
 	float p2Score = 0;
@@ -20,6 +21,8 @@ public class Ball : MonoBehaviour {
 	Text extraText;
 
 	int intro = 1;
+
+
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
@@ -91,7 +94,7 @@ public class Ball : MonoBehaviour {
 			rb.velocity = new Vector3(0,0,0);
 			p2Score++;
 			p2Text.text = "Player Two: " + p2Score;
-			if (p2Score >= 2)
+			if (p2Score >= MAX_SCORE)
 			{
 				extraText.text = "Player 2 Wins!";
 				GAMEOVER = true;
@@ -108,7 +111,7 @@ public class Ball : MonoBehaviour {
 			rb.velocity = new Vector3(0,0,0);
 			p1Score++;
 			p1Text.text = "Player One: " + p1Score;
-			if (p1Score >= 2)
+			if (p1Score >= MAX_SCORE)
 			{
 				extraText.text = "Player 1 Wins!";
 				GAMEOVER = true;
