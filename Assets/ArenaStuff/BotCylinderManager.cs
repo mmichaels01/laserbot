@@ -18,7 +18,7 @@ public class BotCylinderManager : MonoBehaviour
     int arenaWidth = 160;
     int arenaHeight = 120;
 
-    int numPixels;
+    public int numPixels;
     float radius;
     float xTotal;
     float zTotal;
@@ -57,7 +57,7 @@ public class BotCylinderManager : MonoBehaviour
         {
             //float op = transform.position.x - lastPosition.x;
             //float adj = transform.position.z - lastPosition.z;
-            float angle = BotHelper.GetAngle(lastPosition, transform.position, distance);
+            float angle = BotHelper.GetAngle(lastPosition, transform.position);
 
             //if ((op > 0f && adj > 0f) || ((op > 0f && adj < 0f)))
             //{

@@ -10,15 +10,79 @@ public class BotControllerAI : MonoBehaviour
 
     public Vector3 targetPosition;
 
-    // Use this for initialization
+    public GameObject point;
+
+    float lastTime;
+
+    bool calibrated;
+    bool movedLast;
+
     void Start()
     {
-        
-    }
+        point.transform.position = (targetPosition);
+        lastTime = Time.time;
+        calibrated = false;
+        movedLast = true;
 
+    }
 
     void FixedUpdate()
     {
+        float distance = Vector3.Distance(targetPosition, transform.position);
+        targetPosition = point.transform.position;
+        if (Time.time > 5)
+        {
+            if (Time.time - lastTime > 4)
+            {
+                float angle = BotHelper.GetAngle(transform.position,targetPosition);
+                float angleDiff = angle - transform.localEulerAngles.y;
+                print("transform" + (transform.localEulerAngles.y));
+                print("angle" + angle);
+                print("difference" +angleDiff);
+                if (Mathf.Abs(angleDiff) > 15f && movedLast && distance > 15f)
+                {
+                    if(angleDiff > 180){
+                        angleDiff -= 360;
+                    }
+                    else if (angleDiff < -180)
+                    {
+                        angleDiff += 360;
+                    }
+                   RotateMessage(angleDiff);
+                   movedLast = false;
+                }
+                
+                if (distance > 15f)
+                {
+                    MoveMessage(6);
+                    movedLast = true;
+                }
 
+                lastTime = Time.time;
+            }
+        }
+        else if(!calibrated && Time.time > 2)
+        {
+            calibrated = true;
+            MoveMessage(6f);
+        }
+        
+    }
+
+    void Move()
+    {
+
+    }
+
+    void MoveMessage(float distance)
+    {
+        string msg = "move," + distance;
+        gameObject.SendMessage("IssueCommand", msg);
+    }
+
+    void RotateMessage(float degrees)
+    {
+        string msg = "rotate," + degrees;
+        gameObject.SendMessage("IssueCommand", msg);
     }
 }

@@ -18,6 +18,7 @@ public class BotController : MonoBehaviour
     byte[] msg;
     float update;
 
+    public string ip;
 
     Joystick jstick = new Joystick();
 
@@ -31,7 +32,7 @@ public class BotController : MonoBehaviour
         sock2 = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,
             ProtocolType.Udp);
 
-        IPAddress ip1 = IPAddress.Parse("192.168.0.151");
+        IPAddress ip1 = IPAddress.Parse(ip);
 
         IPEndPoint ep1 = new IPEndPoint(ip1, 8080);
 
@@ -118,11 +119,17 @@ public class BotController : MonoBehaviour
         }
     }
 
-    void IssueCommand(String message)
+    void IssueCommand(string message)
     {
+        print(message);
         msg = Encoding.ASCII.GetBytes(message);
         bytesSent += sock1.Send(msg);
     }
 
+
+    void Printer(string message)
+    {
+        print(message);
+    }
 
 }
