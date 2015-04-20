@@ -59,6 +59,7 @@ public class FollowBowlBall : MonoBehaviour
                 message.text = "";
                 message.rectTransform.Translate(new Vector3(110, 0, 0));
                 message.fontSize = 20;
+                ((BallCylinderManager)ball.GetComponent(typeof(BallCylinderManager))).CanBowl(true);
             }
         }
         else

@@ -37,6 +37,8 @@ public class BallCylinderManager : MonoBehaviour {
 
     GameObject[] bumpers;
 
+    bool canBowl = false;
+
     void Start()
     {
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
@@ -49,6 +51,11 @@ public class BallCylinderManager : MonoBehaviour {
         endTime = 0;
 
         bumpers = GameObject.FindGameObjectsWithTag("Bumper");
+    }
+
+    public void CanBowl(bool canBowl)
+    {
+        this.canBowl = canBowl;
     }
 
     void Update()
@@ -74,7 +81,7 @@ public class BallCylinderManager : MonoBehaviour {
                 //print("z" + transform.position.z);
 
 
-                if (transform.position.x < 25)
+                if (transform.position.x < 25 && canBowl)
                 {
                     endTime = Time.time;
                     endPos = transform.position;
@@ -84,13 +91,14 @@ public class BallCylinderManager : MonoBehaviour {
 
             float timeDiff = endTime - startTime;
 
-            if (startTime > 0 && endTime > 0 && (transform.position.x < 25) && timeDiff > .01f)// || transform.position.x > arenaWidth - 10 || transform.position.z < 10 || transform.position.z > arenaHeight - 10))
+            if (startTime > 0 && endTime > 0 && (transform.position.x < 25) && timeDiff > .01f && canBowl)// || transform.position.x > arenaWidth - 10 || transform.position.z < 10 || transform.position.z > arenaHeight - 10))
             {
                 DrawBot(true);
                 print("Setting velocity");
                 rb.AddForce(new Vector3(((endPos.x - startPos.x) / (timeDiff)) * 3.0f, 0f, ((endPos.z - startPos.z) / (timeDiff)) * 4.0f), ForceMode.VelocityChange);
                 //rb.velocity = new Vector3((endPos.x - startPos.x) / (timeDiff), 0f, (endPos.z - startPos.z) / (timeDiff));
                 rolling = true;
+                canBowl = false;
             }
 
             else
