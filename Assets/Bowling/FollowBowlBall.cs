@@ -28,6 +28,8 @@ public class FollowBowlBall : MonoBehaviour
     int score = 0;
     int frame = 1;
 
+    int startFrameTimer = 60*4;
+
     void Awake()
     {
         source = GetComponent<AudioSource>();
@@ -40,58 +42,76 @@ public class FollowBowlBall : MonoBehaviour
             pins.Add(Instantiate(pinPrefab, pinPos.pinPositions[i], Quaternion.identity) as GameObject);
             pinObject.Add(new Pin());
         }
-	}
+        message.text = ((int)(startFrameTimer / 60)).ToString();
+    }
 	
 	void FixedUpdate ()
     {
-        if (displayScoreTimer > 0)
+        if (startFrameTimer != 0)
         {
-            displayScoreTimer++;
-            if (displayScoreTimer > 60 * 5)
+            startFrameTimer--;
+            if (startFrameTimer <= 60)
+                message.text = "Bowl!";
+            else
+                message.text = ((int)(startFrameTimer / 60)).ToString();
+            if (startFrameTimer == 0)
             {
-                if (frame == 3)
-                    message.text = "Your final score is " + score + "!";
-                else
-                    Reset();
+                message.text = "";
+                message.rectTransform.Translate(new Vector3(110, 0, 0));
+                message.fontSize = 20;
             }
         }
-        if (ball.transform.position.x < 0 && ball.transform.position.x > -400f)
+        else
         {
-            transform.LookAt(ball.transform.position);
-            transform.position = new Vector3(ball.transform.position.x + 20, ball.transform.position.y + 50, transform.position.z);
-        }
-        else if (ball.transform.position.x < -400)
-        {
-            transform.position = new Vector3(-450f, 200f, 60f);
-            transform.LookAt(new Vector3(-450f, 20f, 60f));
-
-            if (ball.transform.position.x < -550 && displayScoreTimer == 0)
+            if (displayScoreTimer > 0)
             {
-                if (pinsDown == 0)
-                    source.Stop();
-                waitTimer++;
-                if (waitTimer > 60 * 1)
+                displayScoreTimer++;
+                if (displayScoreTimer > 60 * 5)
                 {
-                    displayScoreTimer++;
-                    waitTimer = 0;
-                    if (pinsDown == 10)
-                        message.text = "You got a Strike!!!";
-                    else if (pinsDown == 1)
-                        message.text = "You knocked over " + pinsDown + " pin!";
-                    else if (pinsDown == 0)
-                        message.text = "You didn't knock over any pins...";
+                    if (frame == 3)
+                        message.text = "Your final score is " + score + "!";
                     else
-                        message.text = "You knocked over " + pinsDown + " pins!";
+                        Reset();
                 }
             }
+            if (ball.transform.position.x < 0 && ball.transform.position.x > -400f)
+            {
+                transform.LookAt(ball.transform.position);
+                transform.position = new Vector3(ball.transform.position.x + 20, ball.transform.position.y + 50, transform.position.z);
+            }
+            else if (ball.transform.position.x < -400)
+            {
+                transform.position = new Vector3(-450f, 200f, 60f);
+                transform.LookAt(new Vector3(-450f, 20f, 60f));
+
+                if (ball.transform.position.x < -550 && displayScoreTimer == 0)
+                {
+                    if (pinsDown == 0)
+                        source.Stop();
+                    waitTimer++;
+                    if (waitTimer > 60 * 1)
+                    {
+                        displayScoreTimer++;
+                        waitTimer = 0;
+                        if (pinsDown == 10)
+                            message.text = "You got a Strike!!!";
+                        else if (pinsDown == 1)
+                            message.text = "You knocked over " + pinsDown + " pin!";
+                        else if (pinsDown == 0)
+                            message.text = "You didn't knock over any pins...";
+                        else
+                            message.text = "You knocked over " + pinsDown + " pins!";
+                    }
+                }
+            }
+            if (ball.transform.position.x < 0 && playSoundRoll == false)
+            {
+                source.PlayOneShot(ballSound, 0.1f);
+                playSoundRoll = true;
+                source.loop = true;
+            }
+            UpdatePins();
         }
-        if (ball.transform.position.x < 0 && playSoundRoll == false)
-        {
-            source.PlayOneShot(ballSound, 0.1f);
-            playSoundRoll = true;
-            source.loop = true;
-        }
-        UpdatePins();
 	}
 
     void Reset()
@@ -125,6 +145,9 @@ public class FollowBowlBall : MonoBehaviour
             pinObject.Add(new Pin());
         }
 
+        startFrameTimer = 60 * 4;
+        message.rectTransform.Translate(new Vector3(-110, 0, 0));
+        message.fontSize = 40;
         frame++;
     }
 
