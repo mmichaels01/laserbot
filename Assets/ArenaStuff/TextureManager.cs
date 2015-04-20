@@ -42,7 +42,7 @@ public class TextureManager : MonoBehaviour {
 
 
 
-        webCamTextureArena = new WebCamTexture("Arena", 320, 240);
+        webCamTextureArena = new WebCamTexture("Arena", 160, 120);
         //webCamTextureBot1 = new WebCamTexture("LaserBot1", 256, 256);
 		//webCamTextureBot2 = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);
 		//webCamTexturePlayer = new WebCamTexture(WebCamTexture.devices[2].name, 256, 256);

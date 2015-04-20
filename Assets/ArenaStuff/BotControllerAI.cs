@@ -12,6 +12,8 @@ public class BotControllerAI : MonoBehaviour
 
     public GameObject point;
 
+    public float targetDistance = 15f;
+
     float lastTime;
 
     bool calibrated;
@@ -39,7 +41,7 @@ public class BotControllerAI : MonoBehaviour
                 print("transform" + (transform.localEulerAngles.y));
                 print("angle" + angle);
                 print("difference" +angleDiff);
-                if (Mathf.Abs(angleDiff) > 15f && movedLast && distance > 15f)
+                if (Mathf.Abs(angleDiff) > 15f && movedLast && distance > targetDistance)
                 {
                     if(angleDiff > 180){
                         angleDiff -= 360;
@@ -48,14 +50,21 @@ public class BotControllerAI : MonoBehaviour
                     {
                         angleDiff += 360;
                     }
+                    PlayMp3("ping");
                    RotateMessage(angleDiff);
                    movedLast = false;
                 }
-                
-                if (distance > 15f)
+
+                if (distance > targetDistance)
                 {
+                    PlayMp3("wheel");
                     MoveMessage(6);
                     movedLast = true;
+                }
+
+                if (distance < targetDistance)
+                {
+                    PlayMp3("r2_surprise");
                 }
 
                 lastTime = Time.time;
@@ -83,6 +92,18 @@ public class BotControllerAI : MonoBehaviour
     void RotateMessage(float degrees)
     {
         string msg = "rotate," + degrees;
+        gameObject.SendMessage("IssueCommand", msg);
+    }
+
+    void PlayMp3(string sound)
+    {
+        string msg = "mp3," + sound;
+        gameObject.SendMessage("IssueCommand", msg);
+    }
+
+    void PlayWav(string sound)
+    {
+        string msg = "wav," + sound;
         gameObject.SendMessage("IssueCommand", msg);
     }
 }

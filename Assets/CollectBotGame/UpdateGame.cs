@@ -13,6 +13,7 @@ public class UpdateGame : MonoBehaviour {
     Text redText;
     Text blueText;
     Text message;
+    public int maxPoints;
 
 	void Start () {
         cube = Instantiate(cubePrefab, GetInitialRandomPosition(), Quaternion.identity) as GameObject;
@@ -39,7 +40,7 @@ public class UpdateGame : MonoBehaviour {
     {
         blueScore++;
 
-        if (blueScore == 2)
+        if (blueScore == maxPoints)
         {
             message.text = "BlueBot Wins!";
             cube.transform.position = new Vector3(10000, 10000, 10000);
@@ -56,8 +57,9 @@ public class UpdateGame : MonoBehaviour {
     public void RedScore()
     {
         redScore++;
+        GameObject.Find("RedBot").SendMessage("IssueCommand", "wav,asshole");
 
-        if (redScore == 2)
+        if (redScore == maxPoints)
         {
             message.text = "RedBot Wins!";
             cube.transform.position = new Vector3(10000, 10000, 10000);
@@ -68,6 +70,6 @@ public class UpdateGame : MonoBehaviour {
             SetRandomPosition();
         }
 
-        blueText.text = "RedBot: " + redScore;
+        redText.text = "RedBot: " + redScore;
     }
 }
