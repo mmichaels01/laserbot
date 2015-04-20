@@ -4,7 +4,7 @@ using System.Collections;
 public class PinPositions {
     
     public Vector3[] pinPositions = new Vector3[10];
-    float yPlacement = 5f;
+    float yPlacement = 40f;
 
     public PinPositions()
     {

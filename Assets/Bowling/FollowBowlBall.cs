@@ -121,7 +121,7 @@ public class FollowBowlBall : MonoBehaviour
 
         for (int i = 0; i < pinPos.pinPositions.Length; i++)
         {
-            pins.Add(Instantiate(pinPrefab, pinPos.pinPositions[0], Quaternion.identity) as GameObject);
+            pins.Add(Instantiate(pinPrefab, pinPos.pinPositions[i], Quaternion.identity) as GameObject);
             pinObject.Add(new Pin());
         }
 
