@@ -1,18 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Pin : MonoBehaviour {
+public class Pin {
 
-    Rigidbody rb;
+    bool fallen = false;
 
-	void Start () {
-        rb = GetComponent<Rigidbody>();
-	}
-	
-    bool Fallen()
+    public Pin()
     {
-        if (transform.rotation.z != 0)
-            return true;
-        return false;
+
+    }
+	
+    public bool GetFallen()
+    {
+        return fallen;
+    }
+
+    public void SetFallen()
+    {
+        fallen = true;
     }
 }

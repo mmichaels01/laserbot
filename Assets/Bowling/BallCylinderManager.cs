@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-
 public class BallCylinderManager : MonoBehaviour {
 
 
@@ -71,8 +70,8 @@ public class BallCylinderManager : MonoBehaviour {
 
             if (!Mathf.Approximately(0f, startTime) && Mathf.Approximately(0f, endTime))
             {
-                print("x" + transform.position.x);
-                print("z" + transform.position.z);
+                //print("x" + transform.position.x);
+                //print("z" + transform.position.z);
 
 
                 if (transform.position.x < 25)
@@ -87,8 +86,9 @@ public class BallCylinderManager : MonoBehaviour {
 
             if (startTime > 0 && endTime > 0 && (transform.position.x < 25) && timeDiff > .01f)// || transform.position.x > arenaWidth - 10 || transform.position.z < 10 || transform.position.z > arenaHeight - 10))
             {
+                DrawBot(true);
                 print("Setting velocity");
-                rb.AddForce(new Vector3(((endPos.x - startPos.x) / (timeDiff)) * 4.0f, 0f, ((endPos.z - startPos.z) / (timeDiff)) * 4.0f), ForceMode.VelocityChange);
+                rb.AddForce(new Vector3(((endPos.x - startPos.x) / (timeDiff)) * 3.0f, 0f, ((endPos.z - startPos.z) / (timeDiff)) * 4.0f), ForceMode.VelocityChange);
                 //rb.velocity = new Vector3((endPos.x - startPos.x) / (timeDiff), 0f, (endPos.z - startPos.z) / (timeDiff));
                 rolling = true;
             }
@@ -122,7 +122,7 @@ public class BallCylinderManager : MonoBehaviour {
         webcamTextureArena = arenaCamera.GetComponent<RawImage>().texture as WebCamTexture;
     }
 
-    void DrawBot()
+    void DrawBot(bool final = false)
     {
         //Draw them all each update
         if (Time.time - lastUpdate > .1f)
@@ -173,9 +173,24 @@ public class BallCylinderManager : MonoBehaviour {
         return false;
     }
 
-    
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider c)
     {
-        rb.velocity = (new Vector3(rb.velocity.x, rb.velocity.y, -rb.velocity.z));
+        if (c.tag == "Bumper")
+            rb.velocity = (new Vector3(rb.velocity.x, rb.velocity.y, -rb.velocity.z));
+    }
+
+    public void Reset()
+    {
+        rb.position = new Vector3(100, 0.5f, 50);
+        transform.position = new Vector3(100, 0.5f, 50);
+        rb.velocity = new Vector3(0, 0, 0);
+        rolling = false;
+
+        lastUpdate = Time.time;
+        startTime = 0;
+        endTime = 0;
+
+        numPixels = 0;
+        radius = 0;
     }
 }
