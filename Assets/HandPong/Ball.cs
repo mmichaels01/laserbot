@@ -29,7 +29,7 @@ public class Ball : MonoBehaviour {
 
     float lastCollided;
 
-
+    Vector3 prevPos;
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
@@ -50,13 +50,13 @@ public class Ball : MonoBehaviour {
 				if (delay == 0)
 				{
 					WallCollision();
-					HandCollision();
 					Scoring();
 				}
 				else
 					Delay();
 
 				lastX = rb.velocity.x;
+                lastZ = rb.velocity.z;
 			}
 		}
 		else
@@ -69,6 +69,8 @@ public class Ball : MonoBehaviour {
 				rb.velocity = new Vector3(speed, 0, RndZ());
 			}
 		}
+
+        prevPos = rb.position;
     }
 
 	int RndZ()
@@ -134,39 +136,34 @@ public class Ball : MonoBehaviour {
 
 	void WallCollision()
 	{
-		if (transform.position.z > top)
+		if (transform.position.z > top - 2.5)
 		{
-			transform.position = new Vector3(transform.position.x, transform.position.y, 117.5f);
+            transform.position = new Vector3(transform.position.x, transform.position.y, top - 2.5f);
 			rb.velocity = new Vector3(rb.velocity.x, 0f, -lastZ);
 			lastZ = -lastZ;
+            print("Z: " + lastZ);
 		}
-		if (transform.position.z < bottom)
+        if (transform.position.z < bottom + 2.5)
 		{
-			transform.position = new Vector3(transform.position.x, transform.position.y, 2.5f);
+			transform.position = new Vector3(transform.position.x, transform.position.y, bottom + 2.5f);
 			rb.velocity = new Vector3(rb.velocity.x, 0f, -lastZ);
 			lastZ = -lastZ;
 		}
 	}
 
-	void HandCollision()
-	{
-        if (Time.time - lastCollided > 1)
+    void OnTriggerEnter(Collider obj)
+    {
+        if (Time.time - lastCollided > .2)
         {
-            if (rb.velocity.x < speed - 10 && rb.velocity.x > 2 && lastX > 0)
-                rb.velocity = new Vector3(-speed, 0f, rb.velocity.z);
-            else if (rb.velocity.x > -speed + 10 && rb.velocity.x < -2 && lastX < 0)
-                rb.velocity = new Vector3(speed, 0f, rb.velocity.z);
-            else if (rb.velocity.x <= 2 && rb.velocity.x >= 0)
-                rb.velocity = new Vector3(-speed, 0f, rb.velocity.z);
-            else if (rb.velocity.x >= -2 && rb.velocity.x <= 0)
-                rb.velocity = new Vector3(speed, 0f, rb.velocity.z);
+            if (obj.tag == "BlueBot" && obj.transform.position.x < transform.position.x)
+                rb.velocity = new Vector3(speed, 0, rb.velocity.z);
+            if (obj.tag == "RedBot" && obj.transform.position.x > transform.position.x)
+                rb.velocity = new Vector3(-speed, 0, rb.velocity.z);
 
             lastCollided = Time.time;
+
+            rb.position = prevPos;
+            transform.position = prevPos;
         }
-	}
-
-    void OnTriggerEnter(Collider c)
-    {
-
     }
 }
