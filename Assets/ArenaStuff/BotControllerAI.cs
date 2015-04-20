@@ -8,7 +8,7 @@ using System.Text;
 public class BotControllerAI : MonoBehaviour
 {
 
-    public Vector3 targetPosition;
+    Vector3 targetPosition;
 
     public GameObject point;
 
@@ -21,7 +21,7 @@ public class BotControllerAI : MonoBehaviour
 
     void Start()
     {
-        point.transform.position = (targetPosition);
+
         lastTime = Time.time;
         calibrated = false;
         movedLast = true;
@@ -30,7 +30,7 @@ public class BotControllerAI : MonoBehaviour
 
     void FixedUpdate()
     {
-        float distance = Vector3.Distance(targetPosition, transform.position);
+        float distance = Vector3.Distance(point.transform.position, transform.position);
         targetPosition = point.transform.position;
         if (Time.time > 5)
         {
@@ -57,7 +57,7 @@ public class BotControllerAI : MonoBehaviour
 
                 if (distance > targetDistance)
                 {
-                    PlayMp3("wheel");
+                    PlayMp3("cannon");
                     MoveMessage(6);
                     movedLast = true;
                 }

@@ -4,19 +4,19 @@ using System.Collections;
 
 public class UpdateGame : MonoBehaviour {
 
-    public GameObject cubePrefab;
+    public GameObject cube;
     public GameObject redBot;
     public GameObject blueBot;
-    GameObject cube;
     int redScore = 0;
     int blueScore = 0;
     Text redText;
     Text blueText;
     Text message;
     public int maxPoints;
+    public int distance;
 
 	void Start () {
-        cube = Instantiate(cubePrefab, GetInitialRandomPosition(), Quaternion.identity) as GameObject;
+        SetRandomPosition();
         message = GameObject.Find("message").GetComponent<Text>();
         redText = GameObject.Find("RedBotScore").GetComponent<Text>();
         blueText = GameObject.Find("BlueBotScore").GetComponent<Text>();
@@ -24,7 +24,17 @@ public class UpdateGame : MonoBehaviour {
 	
 	void FixedUpdate ()
     {
-	}
+        if (Vector3.Distance(cube.transform.position, redBot.transform.position) < distance)
+        {
+            RedScore();
+            SetRandomPosition();
+        }
+        if (Vector3.Distance(cube.transform.position, blueBot.transform.position) < distance)
+        {
+            BlueScore();
+            SetRandomPosition();
+        }
+    }
 
     Vector3 GetInitialRandomPosition()
     {
@@ -39,7 +49,7 @@ public class UpdateGame : MonoBehaviour {
     public void BlueScore()
     {
         blueScore++;
-
+        blueBot.SendMessage("IssueCommand", "mp3,r2_surprise");
         if (blueScore == maxPoints)
         {
             message.text = "BlueBot Wins!";
@@ -57,7 +67,7 @@ public class UpdateGame : MonoBehaviour {
     public void RedScore()
     {
         redScore++;
-        GameObject.Find("RedBot").SendMessage("IssueCommand", "wav,asshole");
+        redBot.SendMessage("IssueCommand", "mp3,r2_unbelievable");
 
         if (redScore == maxPoints)
         {

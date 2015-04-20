@@ -11,6 +11,7 @@ public class BotCylinderManager : MonoBehaviour
     public float colorComparisonStrength = 40f;
     public Color targetColor = new Color(.1f, .1f, .1f);
     public GameObject arenaCamera;
+    public float distanceToUpdate;
 
     WebCamTexture webcamTextureArena;
     float lastUpdate;
@@ -18,7 +19,7 @@ public class BotCylinderManager : MonoBehaviour
     int arenaWidth = 160;
     int arenaHeight = 120;
 
-    public int numPixels;
+    int numPixels;
     float radius;
     float xTotal;
     float zTotal;
@@ -53,7 +54,7 @@ public class BotCylinderManager : MonoBehaviour
         }
 
         float distance = Vector3.Distance(lastPosition, transform.position);
-        if (distance > 10f)
+        if (distance > distanceToUpdate)
         {
             //float op = transform.position.x - lastPosition.x;
             //float adj = transform.position.z - lastPosition.z;
