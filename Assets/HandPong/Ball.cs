@@ -8,7 +8,7 @@ public class Ball : MonoBehaviour {
     float lastX;
     float lastZ;
 
-	public int speed = 75;
+    public int speed;
 
 	float p1Score = 0;
 	float p2Score = 0;
@@ -22,6 +22,13 @@ public class Ball : MonoBehaviour {
 
 	int intro = 1;
 
+    public float left;
+    public float right;
+    public float top;
+    public float bottom;
+
+    float lastCollided;
+
 
 
 	void Start () {
@@ -31,6 +38,7 @@ public class Ball : MonoBehaviour {
 		p1Text = GameObject.Find("p1Score").GetComponent<Text>();
 		p2Text = GameObject.Find("p2Score").GetComponent<Text>();
 		extraText = GameObject.Find("ExtraText").GetComponent<Text>();
+        lastCollided = Time.time;
 	}
 
     void FixedUpdate()
@@ -88,7 +96,7 @@ public class Ball : MonoBehaviour {
 
 	void Scoring()
 	{
-		if (transform.position.x < 0 - 5)
+		if (transform.position.x < left)
 		{
 			rb.position = new Vector3(80, 0.5f, 60);
 			rb.velocity = new Vector3(0,0,0);
@@ -105,7 +113,7 @@ public class Ball : MonoBehaviour {
 				delay = 1;
 			}
 		}
-		else if (transform.position.x > 160 + 5)
+		else if (transform.position.x > right)
 		{
 			rb.position = new Vector3(80, 0.5f, 60);
 			rb.velocity = new Vector3(0,0,0);
@@ -126,13 +134,13 @@ public class Ball : MonoBehaviour {
 
 	void WallCollision()
 	{
-		if (transform.position.z > 117.5f)
+		if (transform.position.z > top)
 		{
 			transform.position = new Vector3(transform.position.x, transform.position.y, 117.5f);
 			rb.velocity = new Vector3(rb.velocity.x, 0f, -lastZ);
 			lastZ = -lastZ;
 		}
-		if (transform.position.z < 2.5f)
+		if (transform.position.z < bottom)
 		{
 			transform.position = new Vector3(transform.position.x, transform.position.y, 2.5f);
 			rb.velocity = new Vector3(rb.velocity.x, 0f, -lastZ);
@@ -142,13 +150,23 @@ public class Ball : MonoBehaviour {
 
 	void HandCollision()
 	{
-		if (rb.velocity.x < speed - 10 && rb.velocity.x > 2 && lastX > 0) 
-			rb.velocity = new Vector3 (-speed, 0f, rb.velocity.z);
-		else if (rb.velocity.x > -speed+10 && rb.velocity.x < -2 && lastX < 0)
-			rb.velocity = new Vector3 (speed, 0f, rb.velocity.z);
-		else if (rb.velocity.x <= 2 && rb.velocity.x >= 0)
-			rb.velocity = new Vector3(-speed, 0f, rb.velocity.z);
-		else if (rb.velocity.x >= -2 && rb.velocity.x <= 0)
-			rb.velocity = new Vector3(speed, 0f, rb.velocity.z);
+        if (Time.time - lastCollided > 1)
+        {
+            if (rb.velocity.x < speed - 10 && rb.velocity.x > 2 && lastX > 0)
+                rb.velocity = new Vector3(-speed, 0f, rb.velocity.z);
+            else if (rb.velocity.x > -speed + 10 && rb.velocity.x < -2 && lastX < 0)
+                rb.velocity = new Vector3(speed, 0f, rb.velocity.z);
+            else if (rb.velocity.x <= 2 && rb.velocity.x >= 0)
+                rb.velocity = new Vector3(-speed, 0f, rb.velocity.z);
+            else if (rb.velocity.x >= -2 && rb.velocity.x <= 0)
+                rb.velocity = new Vector3(speed, 0f, rb.velocity.z);
+
+            lastCollided = Time.time;
+        }
 	}
+
+    void OnTriggerEnter(Collider c)
+    {
+
+    }
 }
