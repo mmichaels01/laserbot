@@ -29,6 +29,8 @@ public class FollowBowlBall : MonoBehaviour
     int frame = 1;
     bool ballOne = true;
 
+    public int MaxFrame;
+
     int startFrameTimer = 60*4;
 
     void Awake()
@@ -75,7 +77,7 @@ public class FollowBowlBall : MonoBehaviour
                 displayScoreTimer++;
                 if (displayScoreTimer > 60 * 5)
                 {
-                    if (frame == 3 && ballOne == false)
+                    if (frame == MaxFrame && ballOne == false)
                         message.text = "Your final score is " + score + "!";
                     else
                     {
