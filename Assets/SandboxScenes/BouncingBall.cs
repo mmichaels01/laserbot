@@ -5,7 +5,7 @@ public class BouncingBall : MonoBehaviour {
 
     Rigidbody rb;
 
-    int rndLow = 15;
+    int rndLow = 40;
     int rndHigh = 40;
     Vector3 prevPos;
 
@@ -24,7 +24,17 @@ public class BouncingBall : MonoBehaviour {
                 rb.velocity = new Vector3(rb.velocity.x, 0, rndHigh);
         if (rb.velocity.z < -rndHigh)
             rb.velocity = new Vector3(rb.velocity.x, 0, -rndHigh);
-            prevPos = transform.position;
+
+        if (rb.velocity.x < rndLow && rb.velocity.x > 0)
+            rb.velocity = new Vector3(rndLow, 0, rb.velocity.z);
+        if (rb.velocity.x > -rndLow && rb.velocity.x < 0)
+            rb.velocity = new Vector3(-rndLow, 0, rb.velocity.z);
+        if (rb.velocity.z < rndLow && rb.velocity.z > 0)
+            rb.velocity = new Vector3(rb.velocity.x, 0, rndLow);
+        if (rb.velocity.z > -rndLow && rb.velocity.z < 0)
+            rb.velocity = new Vector3(rb.velocity.x, 0, -rndLow);
+
+        prevPos = transform.position;
 	}
 
     int RndNum()

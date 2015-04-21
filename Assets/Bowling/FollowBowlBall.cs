@@ -27,6 +27,7 @@ public class FollowBowlBall : MonoBehaviour
 
     int score = 0;
     int frame = 1;
+    bool ballOne = true;
 
     int startFrameTimer = 60*4;
 
@@ -51,7 +52,12 @@ public class FollowBowlBall : MonoBehaviour
         {
             startFrameTimer--;
             if (startFrameTimer <= 60)
-                message.text = "Bowl!";
+            {
+                if (ballOne)
+                    message.text = "Bowl Frame " + frame + "!";
+                else
+                    message.text = "Bowl Ball Two!";
+            }
             else
                 message.text = ((int)(startFrameTimer / 60)).ToString();
             if (startFrameTimer == 0)
@@ -69,10 +75,15 @@ public class FollowBowlBall : MonoBehaviour
                 displayScoreTimer++;
                 if (displayScoreTimer > 60 * 5)
                 {
-                    if (frame == 3)
+                    if (frame == 3 && ballOne == false)
                         message.text = "Your final score is " + score + "!";
                     else
-                        Reset();
+                    {
+                        if (ballOne && pinsDown != 10)
+                            NextBall();
+                        else
+                            Reset();
+                    }
                 }
             }
             if (ball.transform.position.x < 0 && ball.transform.position.x > -400f)
@@ -122,6 +133,7 @@ public class FollowBowlBall : MonoBehaviour
         pinsDown = 0;
         playSoundRoll = false;
         hitPin = false;
+        ballOne = true;
         displayScoreTimer = 0;
         waitTimer = 0;
 
@@ -152,9 +164,41 @@ public class FollowBowlBall : MonoBehaviour
         frame++;
     }
 
+    void NextBall()
+    {
+        message.text = "";
+        score += pinsDown;
+        pinsDown = 0;
+        playSoundRoll = false;
+        hitPin = false;
+        displayScoreTimer = 0;
+        waitTimer = 0;
+        ballOne = false;
+
+        transform.position = new Vector3(64, 100, 64);
+        transform.rotation = Quaternion.EulerRotation(Mathf.PI / 2, Mathf.PI / 2, 0);
+
+        ((BallCylinderManager)ball.GetComponent(typeof(BallCylinderManager))).Reset();
+
+        for (int i = 0; i < pins.Count; i++)
+        {
+            if (RemovePin(i))
+            {
+                Destroy(pins[i]);
+                pins.RemoveAt(i);
+                pinObject.RemoveAt(i);
+                i--;
+            }
+        }
+
+        startFrameTimer = 60 * 4;
+        message.rectTransform.Translate(new Vector3(-110, 0, 0));
+        message.fontSize = 40;
+    }
+
     void UpdatePins()
     {
-        for (int i = 0; i < pinPos.pinPositions.Length; i++)
+        for (int i = 0; i < pins.Count; i++)
         {
             if (Fallen(i))
                 pinsDown++;
@@ -179,5 +223,10 @@ public class FollowBowlBall : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public bool RemovePin(int i)
+    {
+        return pinObject[i].GetFallen();
     }
 }
