@@ -67,7 +67,7 @@ public class FollowBowlBall : MonoBehaviour
                 message.text = "";
                 message.rectTransform.Translate(new Vector3(110, 0, 0));
                 message.fontSize = 20;
-                ((BallCylinderManager)ball.GetComponent(typeof(BallCylinderManager))).CanBowl(true);
+                ((BowlingCylinderManager)ball.GetComponent(typeof(BowlingCylinderManager))).CanBowl(true);
             }
         }
         else
@@ -142,7 +142,7 @@ public class FollowBowlBall : MonoBehaviour
         transform.position = new Vector3(64, 100, 64);
         transform.rotation = Quaternion.EulerRotation(Mathf.PI / 2, Mathf.PI / 2, 0);
 
-        ((BallCylinderManager)ball.GetComponent(typeof(BallCylinderManager))).Reset();
+        ((BowlingCylinderManager)ball.GetComponent(typeof(BowlingCylinderManager))).Reset();
 
         for (int i = 0; i < pins.Count; i++)
         {
@@ -180,7 +180,7 @@ public class FollowBowlBall : MonoBehaviour
         transform.position = new Vector3(64, 100, 64);
         transform.rotation = Quaternion.EulerRotation(Mathf.PI / 2, Mathf.PI / 2, 0);
 
-        ((BallCylinderManager)ball.GetComponent(typeof(BallCylinderManager))).Reset();
+        ((BowlingCylinderManager)ball.GetComponent(typeof(BowlingCylinderManager))).Reset();
 
         for (int i = 0; i < pins.Count; i++)
         {
