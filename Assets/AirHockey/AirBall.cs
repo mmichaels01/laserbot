@@ -27,6 +27,9 @@ public class AirBall : MonoBehaviour {
     public float top;
     public float bottom;
 
+    public AudioSource bounce;
+    public AudioSource score;
+
     float lastCollided;
 
     Vector3 prevPos;
@@ -100,6 +103,8 @@ public class AirBall : MonoBehaviour {
 	{
 		if (transform.position.x < left)
 		{
+            score.Play();
+
 			rb.position = new Vector3(80, 0.5f, 60);
 			rb.velocity = new Vector3(0,0,0);
 			p2Score++;
@@ -117,6 +122,8 @@ public class AirBall : MonoBehaviour {
 		}
 		else if (transform.position.x > right)
 		{
+            score.Play();
+
 			rb.position = new Vector3(80, 0.5f, 60);
 			rb.velocity = new Vector3(0,0,0);
 			p1Score++;
@@ -166,6 +173,10 @@ public class AirBall : MonoBehaviour {
 
             rb.position = prevPos;
             transform.position = prevPos;
+
+            bounce.Play();
+
+
         }
         //if (obj.tag == "Arena")
         //{
@@ -181,6 +192,8 @@ public class AirBall : MonoBehaviour {
             rb.position = prevPos;
             transform.position = prevPos;
             rb.velocity = new Vector3(-rb.velocity.x, 0, rb.velocity.z);
+
+  
         }
     }
 }
